@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  bucview:
+    image: ${DOCKER_REGISTRY-}bucview
+    build:
+      context: .
+      dockerfile: BucView/Dockerfile
