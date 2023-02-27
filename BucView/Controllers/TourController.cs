@@ -4,10 +4,10 @@ namespace BucView.Controllers
 {
     public class TourController : Controller
     {
-        public IActionResult Index(string building)
+        public IActionResult Index(string id)
         {
-            if (!string.IsNullOrEmpty(building))
-                ViewData["Building"] = building;
+            if (id != null)
+                ViewData["Building"] = id;
             else
                 ViewData["Building"] = "N/A";
             return View();
