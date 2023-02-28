@@ -1,0 +1,18 @@
+{
+    "buildings": 
+    [
+        {
+            "buildingName": "Center for Physical Activity",
+            "buildingType": "non-specific",
+            "buildingInfo":
+            [
+                {
+                    "bio": "This is where students and faculty come to do athletic ativites",
+                    "image": "the image",
+                    "tags": ["Gym", "Workout", "Sports", "Activity"]
+                }
+            ]
+            
+        }
+    ]
+}
