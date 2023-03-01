@@ -3,10 +3,11 @@
 *@
 @{
     ViewData["Title"] = "Tour";
+    @var image = ViewData["Building"] +.jpg;
 }
 
 <h1>This will be the Tour Page</h1>
-
+<img src="@ViewData["Building"] .jpg" />
 <img src="" alt="This is where a picture for @ViewData["Building"] will be dynamically loaded"/>
 
 <p>

@@ -17,5 +17,9 @@ namespace BucView.Models
             return Tour1Order.SkipWhile(x => x != currentBuilding).Skip(1).DefaultIfEmpty(Tour1Order[0]).FirstOrDefault()!;
         }
 
+
+        //read from json
+
+
     }
 }
