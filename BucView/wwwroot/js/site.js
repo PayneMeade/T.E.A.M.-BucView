@@ -1,4 +1,11 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿"using strict"
 
-// Write your JavaScript code.
+import { getNext } from "./TourAPI.js";
+
+var button = document.getElementById("tourButton");
+button.addEventListener("click", function(e){
+    var result1 = getNext();
+    console.log(result1);
+})
+
+
