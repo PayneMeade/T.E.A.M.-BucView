@@ -1,5 +1,17 @@
 [
   {
+    "buildingName": "ADA Earnest House",
+    "buildingType": "General",
+    "buildingInfo": [
+      {
+        "bio": "This will be the bio",
+        "image": "../Views/Images/Ada_Earnest_House.jpg",
+        "tags": [ "Gym", "Workout", "Sports", "Activity" ]
+      }
+    ]
+  },
+
+  {
     "buildingName": "CPA",
     "buildingType": "General",
     "buildingInfo": [
