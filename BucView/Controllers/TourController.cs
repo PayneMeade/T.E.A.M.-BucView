@@ -1,15 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using System.Web;
 
 namespace BucView.Controllers
 {
     public class TourController : Controller
     {
-        public IActionResult Index(string building)
+        public IActionResult Index(string id)
         {
-            if (!string.IsNullOrEmpty(building))
-                ViewData["Building"] = building;
+            if (id != null)
+            {
+                var parsedString = HttpUtility.UrlDecode(id);
+                ViewData["Building"] = parsedString;
+            }
             else
+            {
                 ViewData["Building"] = "N/A";
+            }
             return View();
         }
     }

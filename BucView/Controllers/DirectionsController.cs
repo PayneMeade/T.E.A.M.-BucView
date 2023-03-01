@@ -1,21 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using BucView.Models;
+using System.Web;
 
 namespace BucView.Controllers
+
 {
     public class DirectionsController : Controller
     {
-        public IActionResult Index(string fromBuilding, string toBuilding)
+        public IActionResult Index(string id)
         {
-            if (!string.IsNullOrEmpty(fromBuilding) && !string.IsNullOrEmpty(toBuilding))
+            string toBuilding;
+            var tour1 = new Tour();
+            if (id == null)
             {
-                ViewData["FromBuilding"] = fromBuilding;
-                ViewData["ToBuilding"] = toBuilding;
+                toBuilding = tour1.getNext("tour1","");
+                ViewData["FromBuilding"] = "N/A";
             }
             else
             {
-                ViewData["FromBuilding"] = "N/A";
-                ViewData["ToBuilding"] = "N/A";
+                var parsedString = HttpUtility.UrlDecode(id);
+                toBuilding = tour1.getNext("tour1", parsedString);
+                ViewData["FromBuilding"] = parsedString;
             }
+            ViewData["ToBuilding"] = toBuilding;
             return View();
         }
     }
