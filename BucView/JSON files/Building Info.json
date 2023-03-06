@@ -1,6 +1,24 @@
 [
   {
-    "buildingName": "ADA Earnest House",
+    "buildingName": "D.P. Culp Center",
+    "buildingType": "General",
+    "directions": "No directions provided to culp yet",
+    "buildingInfo": {
+      "bio": "This will be the bio of the culp center",
+      "tags": []
+    }
+  },
+  {
+    "buildingName": "Stone Hall",
+    "buildingType": "General",
+    "directions": "Turn away from Culp Center and the building immediately on your left is Stone Hall.",
+    "buildingInfo": {
+      "bio": "This will be the bio of stone hall",
+      "tags": []
+    }
+  },
+  {
+    "buildingName": "Carter Hall",
     "buildingType": "General",
     "buildingInfo": [
       {
