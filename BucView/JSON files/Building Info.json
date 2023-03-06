@@ -7,7 +7,7 @@
     "buildingInfo": {
       "bio": "The Ada Earnest House provides students with International oppurtunities and translating services.",
       "tags": [ "International" ],
-      "long": "36.30050746620785",
+      "Long": "36.30050746620785",
       "Lat": "-82.37156363568066"
     }
 
@@ -219,8 +219,7 @@
 
   {
     "buildingName": "Powell Hall",
-    "buildingType": "Residence",
-    "directionsTo": "Facing away from Hutcheson Hall, across from the University Commons is Powell Hall.",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
       "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Men" ],
@@ -387,8 +386,7 @@
 
   {
     "buildingName": "Parking Garage - C Store",
-    "buildingType": "Parking",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Grab what you need on your way to class or as you prepare to return home.",
       "tags": [ "Parking", "Store", "Food" ],
@@ -426,8 +424,7 @@
 
   {
     "buildingName": "Mathes Hall",
-    "buildingType": "Academic",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Choral and instrumental sounds can be heard in every hallway of Mathes Hall, home to the ETSU Department of Music.",
       "tags": [ "Music", "Band", "Orchestra" ],
@@ -439,8 +436,7 @@
 
   {
     "buildingName": "Milenniumm Center",
-    "buildingType": "Academic",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Located across the street from the main campus and accessed via the ETSU Skywalk, the Millennium Center is where you will find classes and offices for the Department of Computing. The Millennium Center also offers event space for organizations and community partners to reserve rooms for meetings, retreats, and other events.",
       "tags": [ "Computing", "Computer Science", "Technology" ],
@@ -452,8 +448,7 @@
 
   {
     "buildingName": "National Alumni Association",
-    "buildingType": "Alumni",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Once a Buccaneer, always a Buccaneer! The ETSU National Alumni Association connects alumni from all over the globe with campus events and opportunities. ",
       "tags": [ "Alumni" ],
@@ -465,8 +460,7 @@
 
   {
     "buildingName": "Nell Dossett Hall",
-    "buildingType": "Health",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "ETSU offers its students, faculty, and staff support through the university's Counseling Center, located inside Nell Dossett Hall. The Counseling Center offers personal counseling, workshops, drop-in talk sessions, and more.",
       "tags": [ "Counseling", "mental health" ],
@@ -478,8 +472,7 @@
 
   {
     "buildingName": "Niswonger Digital Media Center",
-    "buildingType": "Academic",
-    "directionsTo": "",
+    "buildingType": "General",
     "buildingInfo": {
       "bio": "Housed here is the Digital Media program that provides students with technical knowledge and an understanding of aesthetics to become digital media professionals capable of working at the highest artistic and technical levels. The program includes concentrations in digital animation, digital game design, digital visualization, and visual effects.",
       "tags": [ "Digit Media", "Game Design", "Digital Visualization", "Animation", "Visual Effects" ],
@@ -517,8 +510,7 @@
 
   {
     "buildingName": "Tennis Complex",
-    "buildingType": "Sports",
-    "directionsTo": "",
+    "buildingType": "Stadium",
     "buildingInfo": {
       "bio": "This is where our nationally ranked tennis team takes the court to compete",
       "tags": [ "Athletics", "Tennis", "Sports" ],
@@ -556,8 +548,7 @@
 
   {
     "buildingName": "Alumni Plaza/ Carillon",
-    "buildingType": "Alumni",
-    "directionsTo": "Facing Martha Culp Ave, cross the street and turn left to continue along Martha Culp Ave until you reach Stout Dr. Turn right and continue along Stout Dr. Once Gilbreath is on your right, turn left and cross Stout Dr. Continue straight and you will see Carillon and Alumni Plaza.",
+    "buildingType": "general",
     "buildingInfo": {
       "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
       "tags": [ "Alumni", "Bell Tower" ],
