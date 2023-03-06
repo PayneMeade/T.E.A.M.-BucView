@@ -8,6 +8,7 @@ namespace BucView.Controllers
 {
     public class TourController : Controller
     {
+
         public IActionResult Index(string id)
         {
             Building building = new Building(); 
