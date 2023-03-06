@@ -1,16 +1,55 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
     ViewData["Title"] = "Tour";
 }
 
-<h1>This will be the Tour Page</h1>
+<style type="text/css">
+			html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkblue;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+			
+			/* Banner */
+			.banner { padding:0;}
+			.banner-inner { margin:auto;padding:10px;width:970px;background:#061670; }
+			.banner-inner h1 {color:#ffdf0d;font-size:32px;}
+			
+			/* Content */
+			#content { color:blue;}
+			#content-inner { margin:0 auto; width:970px; padding:10px;background:#d3d3f9;border-bottom-right-radius:15px;border-bottom-left-radius:15px;}
+			#content .column { margin:0; text-align:justify; float:left;width:450px;padding:0 24px;}
+			
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+</style>
 
-<img src="" alt="This is where a picture for @ViewData["Building"] will be dynamically loaded"/>
+<body style="background-image:url('images/etsu.jpg'); background-size:cover">
+<div style="padding-top:80px">
+			<div class="banner">
+				<div class="banner-inner">
+				<h1>Tour Page</h1>
+				</div>
+			</div>
+		
 
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie augue ut neque rhoncus, et accumsan enim eleifend. Duis sagittis elit vitae neque rhoncus, non consequat nisi sollicitudin. Nulla congue sem scelerisque vulputate vulputate. Aenean fermentum ante vel odio imperdiet ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a quam dolor. Sed vulputate consectetur placerat. Ut pulvinar commodo dolor, nec euismod dolor fringilla et. Nullam ex tortor, euismod id lacinia sit amet, finibus in metus.
-</p>
-
-<a class="btn btn-link" asp-controller="Directions" asp-action="Index">Next</a>
+			<div id="content">
+				<div id="content-inner">
+				
+					<div class="column">
+						<h2><span>Building Name</span></h2>
+						<img src="" alt="This is where a picture for @ViewData["Building"] will be dynamically loaded"/>
+					</div>	
+					<div class="column">
+						<h2><span>Heading</span></h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie augue ut neque rhoncus, et accumsan enim eleifend. Duis sagittis elit vitae neque rhoncus, non consequat nisi sollicitudin. Nulla congue sem scelerisque vulputate vulputate. Aenean fermentum ante vel odio imperdiet ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a quam dolor. Sed vulputate consectetur placerat. Ut pulvinar commodo dolor, nec euismod dolor fringilla et. Nullam ex tortor, euismod id lacinia sit amet, finibus in metus.
+						</p>
+					</div>					
+					<div class="clr"></div>
+					<div  style="text-align:right">
+						<a class="btn btn-link" asp-controller="Directions" asp-action="Index">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+</body>
