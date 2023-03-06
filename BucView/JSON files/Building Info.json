@@ -25,7 +25,7 @@
   },
 
   {
-    "buildingName": "CPA",
+    "buildingName": "Basler Center for Physical Activity",
     "buildingType": "General",
     "buildingInfo": {
       "bio": "Much more than just a gym, this building not only provides students and employees the space and state-of-the-art equipment they need to maintain physical fitness, but is also the home of intramural sports and a hub of social activity. The Basler Center for Physical Activity is open late so that students can go no matter their schedule.",
@@ -37,7 +37,7 @@
   },
 
   {
-    "buildingName": "Brooks Gym",
+    "buildingName": "Brooks Gymnasium",
     "buildingType": "Sports",
     "buildingInfo": {
       "bio": "Watch the Lady Bucs compete in Brooks Gymnasium. The building is also home to the national award-winning ROTC program. And, did you know there is also an aerial dance studio at Brooks Gym?",
@@ -60,7 +60,7 @@
   },
 
   {
-    "buildingName": "Campus Center",
+    "buildingName": "Campus Center Building",
     "buildingType": "General",
     "buildingInfo": {
       "bio": "Several offices and departments call Campus Center home, including the Department of Theatre and Dance and the George L. Carter Railroad Museum. The ETSU Pridewalk stretches a path outside of the building, displaying murals of several ETSU student organizations to represent their support of pride and civility.",
@@ -383,8 +383,8 @@
     "buildingName": "Martin Center for the Arts",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Home to a large auditorium, a black box theater, and a rehearsal hall, the Martin Center for the Arts is a hub for artistic performances by students and community groups as well as touring productions.",
+      "tags": [ "Performing Arts", "Theatre", "Auditorium" ],
       "Long": "36.3046829882265",
       "Lat": "-82.37192511177751"
     }
@@ -393,10 +393,10 @@
 
   {
     "buildingName": "Mathes Hall",
-    "buildingType": "General",
+    "buildingType": "Academic",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Choral and instrumental sounds can be heard in every hallway of Mathes Hall, home to the ETSU Department of Music.",
+      "tags": [ "Music", "Band", "Orchestra" ],
       "Long": "36.30386180753432",
       "Lat": "-82.36961840736399"
     }
@@ -405,10 +405,10 @@
 
   {
     "buildingName": "Milenniumm Center",
-    "buildingType": "General",
+    "buildingType": "Academic",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Located across the street from the main campus and accessed via the ETSU Skywalk, the Millennium Center is where you will find classes and offices for the Department of Computing. The Millennium Center also offers event space for organizations and community partners to reserve rooms for meetings, retreats, and other events.",
+      "tags": [ "Computing", "Computer Science", "Technology" ],
       "Long": "36.30576585069065",
       "Lat": "-82.37121966326296"
     }
@@ -419,8 +419,8 @@
     "buildingName": "National Alumni Association",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Once a Buccaneer, always a Buccaneer! The ETSU National Alumni Association connects alumni from all over the globe with campus events and opportunities. ",
+      "tags": [ "Alumni" ],
       "Long": "36.306023028330706",
       "Lat": "-82.36673502661672"
     }
@@ -431,8 +431,8 @@
     "buildingName": "Nell Dossett Hall",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "ETSU offers its students, faculty, and staff support through the university's Counseling Center, located inside Nell Dossett Hall. The Counseling Center offers personal counseling, workshops, drop-in talk sessions, and more.",
+      "tags": [ "Counseling", "mental health" ],
       "Long": "36.29952564948258",
       "Lat": "-82.37153879464798"
     }
@@ -441,10 +441,10 @@
 
   {
     "buildingName": "Niswonger Digital Media Center",
-    "buildingType": "General",
+    "buildingType": "Academic",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Housed here is the Digital Media program that provides students with technical knowledge and an understanding of aesthetics to become digital media professionals capable of working at the highest artistic and technical levels. The program includes concentrations in digital animation, digital game design, digital visualization, and visual effects.",
+      "tags": [ "Digit Media", "Game Design", "Digital Visualization", "Animation", "Visual Effects" ],
       "Long": "36.305612446086336",
       "Lat": "-82.37190831547737"
     }
@@ -455,8 +455,8 @@
     "buildingName": "Parking Services",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "We welcome visitors and guests to ETSU! Should you visit during the week between normal business hours, please stop by Parking Services to receive a guest pass at no charge.",
+      "tags": [ "Parking" ],
       "Long": "36.30484541858612",
       "Lat": "-82.36372847270552"
     }
@@ -467,8 +467,8 @@
     "buildingName": "Summers-Taylor Soccer Complex",
     "buildingType": "Sports",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "This state-of-the-art soccer stadium provides a wonderful experience for fans of this international sport.",
+      "tags": [ "Athletics", "Soccer", "Sports" ],
       "Long": "36.29870441443843",
       "Lat": "-82.37716558617957"
     }
@@ -477,10 +477,10 @@
 
   {
     "buildingName": "Tennis Complex",
-    "buildingType": "Stadium",
+    "buildingType": "Sports",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "This is where our nationally ranked tennis team takes the court to compete",
+      "tags": [ "Athletics", "Tennis", "Sports" ],
       "Long": "36.297495107567734",
       "Lat": "-82.3761997936754"
     }
@@ -491,8 +491,8 @@
     "buildingName": "Yoakley Hall",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Yoakley Hall includes the Veterans Affairs Military Affiliated Student Resource Center which is for family members of veterans, anyone who has served in the military as well as combat veterans. This space includes an exclusive lounge and study space as well as staff members dedicated to this population. Yoakley is also home to the College of Graduate and Continuing Studies offering 120 high quality graduate and professional degree options. ",
+      "tags": [ "Student Resource", "Verterans", "Military" ],
       "Long": "36.30085155798609",
       "Lat": "-82.36876336500151"
     }
@@ -503,8 +503,8 @@
     "buildingName": "B. Caroll Reece Museum",
     "buildingType": "General",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "For more than 50 years, the Reece Museum has told the many stories of Appalachia. Housing over 20,000 artifacts, the Reece collection captures the region's past as well as its contemporary art and culture.",
+      "tags": [ "Art", "Museum" ],
       "Long": "36.30323797696211",
       "Lat": "-82.36721841274758"
     }
@@ -515,8 +515,8 @@
     "buildingName": "Alumni Plaza/ Carillon",
     "buildingType": "general",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
+      "tags": [ "Alumni", "Bell Tower" ],
       "Long": "36.303869155277646",
       "Lat": "-82.36777631217261"
     }
