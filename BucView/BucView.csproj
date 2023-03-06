@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\Images\Ada Earnest House.jpg" />
-    <None Include="wwwroot\Images\Ball_Hall.jpg" />
+    <None Include="wwwroot\Images\Ball Hall.jpg" />
     <None Include="wwwroot\Images\Basler_Center_for_Physical_Activity.jpg" />
     <None Include="wwwroot\Images\Brooks_Gym.jpg" />
     <None Include="wwwroot\Images\Brown_Hall.jpg" />
