@@ -77,7 +77,7 @@
   },
 
   {
-    "buildingName": "Culp Center",
+    "buildingName": "D.P. Culp Center",
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
@@ -89,7 +89,7 @@
   },
 
   {
-    "buildingName": "Football Stadium",
+    "buildingName": "William B. Greene Jr. Football Stadium",
     "buildingType": "Sports",
     "directionsTo": "Facing South Dossett Dr, turn left and continue along South Dossett Dr until you come to the roundabout. Cross Jack Vest Dr and continue onward to see the William B. Greene Jr. Football Stadium.",
     "buildingInfo": {
@@ -102,7 +102,7 @@
   },
 
   {
-    "buildingName": "Gilbreth Hall",
+    "buildingName": "Gilbreath Hall",
     "buildingType": "Academic",
     "directionsTo": "Facing the Quad, turn left and head straight. The building right ahead is Gilbreath Hall.",
     "buildingInfo": {
@@ -153,7 +153,7 @@
   },
 
   {
-    "buildingName": "Sherrod Library",
+    "buildingName": "Charles C. Sherod Library",
     "buildingType": "General",
     "directionsTo": "Facing Stout Dr, turn left and then turn left again to head along the sidewalk. Continue straight and the large building on your left next to Rogers-Stout Hall is the Charles C. Sherrod Library.",
     "buildingInfo": {
@@ -166,7 +166,7 @@
   },
 
   {
-    "buildingName": "Lucile-CLement Hall",
+    "buildingName": "Lucille CLement Hall",
     "buildingType": "Residence",
     "directionsTo": "Facing South Dossett Dr, turn right and continue along South Dossett Dr. The large building on the right next to The Ada Earnest House is Lucille Clement Hall.",
     "buildingInfo": {
@@ -179,7 +179,7 @@
   },
 
   {
-    "buildingName": "Lunsford Apartments",
+    "buildingName": "Luntsford Apartments",
     "buildingType": "Residence",
     "directionsTo": "Facing South Dossett Dr, turn left and continue along South Dossett Dr until you come to the roundabout. Cross Jack Vest Dr and continue onward to see the William B. Greene Jr. Football Stadium.",
     "buildingInfo": {
@@ -192,7 +192,7 @@
   },
 
   {
-    "buildingName": "Minidome",
+    "buildingName": "ETSU Athletic Center",
     "buildingType": "General",
     "directionsTo": "Facing away from Warf-Pickel Hall, cross John Roberts Bell Dr and turn left. The large building in front of you is the Minidome.",
     "buildingInfo": {
@@ -230,7 +230,7 @@
   },
 
   {
-    "buildingName": "Roger Stout Hall",
+    "buildingName": "Rogers-Stout Hall",
     "buildingType": "Academic",
     "directionsTo": "Turn around and head back towards Stout Dr. Cross the street and turn left to head along Stout Dr. Continue down Stout Dr past the Reece Museum. The next building on your right will be Roger-Stout Hall.",
     "buildingInfo": {
@@ -256,7 +256,7 @@
   },
 
   {
-    "buildingName": "Sam-Wilson Hall",
+    "buildingName": "Sam Wilson Hall",
     "buildingType": "Academic",
     "directionsTo": "Facing away from the Brooks Gymnasium, turn right and continue around the Quad. The next building on the right will be Sam Wilson Hall.",
     "buildingInfo": {
@@ -282,7 +282,7 @@
   },
 
   {
-    "buildingName": "The Treehouse",
+    "buildingName": "Tree House",
     "buildingType": "General",
     "directionsTo": "Facing away from the Campus Center Building, if you head across the Quad on the left, you will see The Tree House.",
     "buildingInfo": {
@@ -547,7 +547,7 @@
   },
 
   {
-    "buildingName": "Alumni Plaza/ Carillon",
+    "buildingName": "Carillon and Alumni Plaza",
     "buildingType": "general",
     "buildingInfo": {
       "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
