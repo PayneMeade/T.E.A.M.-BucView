@@ -27,7 +27,7 @@
   },
 
   {
-    "buildingName": "CPA",
+    "buildingName": "Basler Center for Physical Activity",
     "buildingType": "General",
     "directionsTo": "Facing away from the football stadium gates, head towards the roundabout and then turn left and head down Jack Vest Dr. The large building on your left is the Basler Center for Physical Activity.",
     "buildingInfo": {
@@ -40,7 +40,7 @@
   },
 
   {
-    "buildingName": "Brooks Gym",
+    "buildingName": "Brooks Gymnasium",
     "buildingType": "Sports",
     "directionsTo": "Continue along the sidewalk to the right side of the ETSU Athletic center. Continue walking till you can take the sidewalk to the right. You should be at the Quad. If you look to your left, you’ll see the Brooks Gymnasium.",
     "buildingInfo": {
@@ -65,7 +65,7 @@
   },
 
   {
-    "buildingName": "Campus Center",
+    "buildingName": "Campus Center Building",
     "buildingType": "General",
     "directionsTo": "Facing away from Sam Wilson Hall, turn right and continue around the Quad. The next building on your right will be the Campus Center Building.",
     "buildingInfo": {
@@ -77,7 +77,7 @@
   },
 
   {
-    "buildingName": "Culp Center",
+    "buildingName": "D.P. Culp Center",
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
@@ -89,7 +89,7 @@
   },
 
   {
-    "buildingName": "Football Stadium",
+    "buildingName": "William B. Greene Jr. Football Stadium",
     "buildingType": "Sports",
     "directionsTo": "Facing South Dossett Dr, turn left and continue along South Dossett Dr until you come to the roundabout. Cross Jack Vest Dr and continue onward to see the William B. Greene Jr. Football Stadium.",
     "buildingInfo": {
@@ -102,7 +102,7 @@
   },
 
   {
-    "buildingName": "Gilbreth Hall",
+    "buildingName": "Gilbreath Hall",
     "buildingType": "Academic",
     "directionsTo": "Facing the Quad, turn left and head straight. The building right ahead is Gilbreath Hall.",
     "buildingInfo": {
@@ -153,7 +153,7 @@
   },
 
   {
-    "buildingName": "Sherrod Library",
+    "buildingName": "Charles C. Sherod Library",
     "buildingType": "General",
     "directionsTo": "Facing Stout Dr, turn left and then turn left again to head along the sidewalk. Continue straight and the large building on your left next to Rogers-Stout Hall is the Charles C. Sherrod Library.",
     "buildingInfo": {
@@ -166,7 +166,7 @@
   },
 
   {
-    "buildingName": "Lucile-CLement Hall",
+    "buildingName": "Lucille CLement Hall",
     "buildingType": "Residence",
     "directionsTo": "Facing South Dossett Dr, turn right and continue along South Dossett Dr. The large building on the right next to The Ada Earnest House is Lucille Clement Hall.",
     "buildingInfo": {
@@ -179,7 +179,7 @@
   },
 
   {
-    "buildingName": "Lunsford Apartments",
+    "buildingName": "Luntsford Apartments",
     "buildingType": "Residence",
     "directionsTo": "Facing South Dossett Dr, turn left and continue along South Dossett Dr until you come to the roundabout. Cross Jack Vest Dr and continue onward to see the William B. Greene Jr. Football Stadium.",
     "buildingInfo": {
@@ -192,7 +192,7 @@
   },
 
   {
-    "buildingName": "Minidome",
+    "buildingName": "ETSU Athletic Center",
     "buildingType": "General",
     "directionsTo": "Facing away from Warf-Pickel Hall, cross John Roberts Bell Dr and turn left. The large building in front of you is the Minidome.",
     "buildingInfo": {
@@ -206,7 +206,7 @@
 
   {
     "buildingName": "Nicks Hall",
-    "buildingType": "General",
+    "buildingType": "Academic",
     "directionsTo": "", 
     "buildingInfo": {
       "bio": "You will see many students entering and exiting Nicks Hall wearing scrubs and white coats.  Nicks Hall is home to the College of Nursing, which has one of the largest nursing enrollments in the state.  The fourth floor is dedicated to Information Technology Support and Computing.",
@@ -220,7 +220,6 @@
   {
     "buildingName": "Powell Hall",
     "buildingType": "General",
-    "directionsTo": "Facing away from Hutcheson Hall, across from the University Commons is Powell Hall.",
     "buildingInfo": {
       "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
       "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Men" ],
@@ -231,7 +230,7 @@
   },
 
   {
-    "buildingName": "Roger Stout Hall",
+    "buildingName": "Rogers-Stout Hall",
     "buildingType": "Academic",
     "directionsTo": "Turn around and head back towards Stout Dr. Cross the street and turn left to head along Stout Dr. Continue down Stout Dr past the Reece Museum. The next building on your right will be Roger-Stout Hall.",
     "buildingInfo": {
@@ -257,7 +256,7 @@
   },
 
   {
-    "buildingName": "Sam-Wilson Hall",
+    "buildingName": "Sam Wilson Hall",
     "buildingType": "Academic",
     "directionsTo": "Facing away from the Brooks Gymnasium, turn right and continue around the Quad. The next building on the right will be Sam Wilson Hall.",
     "buildingInfo": {
@@ -283,7 +282,7 @@
   },
 
   {
-    "buildingName": "The Treehouse",
+    "buildingName": "Tree House",
     "buildingType": "General",
     "directionsTo": "Facing away from the Campus Center Building, if you head across the Quad on the left, you will see The Tree House.",
     "buildingInfo": {
@@ -388,7 +387,6 @@
   {
     "buildingName": "Parking Garage - C Store",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
       "bio": "Grab what you need on your way to class or as you prepare to return home.",
       "tags": [ "Parking", "Store", "Food" ],
@@ -416,8 +414,8 @@
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Home to a large auditorium, a black box theater, and a rehearsal hall, the Martin Center for the Arts is a hub for artistic performances by students and community groups as well as touring productions.",
+      "tags": [ "Performing Arts", "Theatre", "Auditorium" ],
       "Long": "36.3046829882265",
       "Lat": "-82.37192511177751"
     }
@@ -427,10 +425,9 @@
   {
     "buildingName": "Mathes Hall",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Choral and instrumental sounds can be heard in every hallway of Mathes Hall, home to the ETSU Department of Music.",
+      "tags": [ "Music", "Band", "Orchestra" ],
       "Long": "36.30386180753432",
       "Lat": "-82.36961840736399"
     }
@@ -440,23 +437,21 @@
   {
     "buildingName": "Milenniumm Center",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Located across the street from the main campus and accessed via the ETSU Skywalk, the Millennium Center is where you will find classes and offices for the Department of Computing. The Millennium Center also offers event space for organizations and community partners to reserve rooms for meetings, retreats, and other events.",
+      "tags": [ "Computing", "Computer Science", "Technology" ],
       "Long": "36.30576585069065",
       "Lat": "-82.37121966326296"
     }
-    
+
   },
 
   {
     "buildingName": "National Alumni Association",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Once a Buccaneer, always a Buccaneer! The ETSU National Alumni Association connects alumni from all over the globe with campus events and opportunities. ",
+      "tags": [ "Alumni" ],
       "Long": "36.306023028330706",
       "Lat": "-82.36673502661672"
     }
@@ -466,10 +461,9 @@
   {
     "buildingName": "Nell Dossett Hall",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "ETSU offers its students, faculty, and staff support through the university's Counseling Center, located inside Nell Dossett Hall. The Counseling Center offers personal counseling, workshops, drop-in talk sessions, and more.",
+      "tags": [ "Counseling", "mental health" ],
       "Long": "36.29952564948258",
       "Lat": "-82.37153879464798"
     }
@@ -479,14 +473,13 @@
   {
     "buildingName": "Niswonger Digital Media Center",
     "buildingType": "General",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Housed here is the Digital Media program that provides students with technical knowledge and an understanding of aesthetics to become digital media professionals capable of working at the highest artistic and technical levels. The program includes concentrations in digital animation, digital game design, digital visualization, and visual effects.",
+      "tags": [ "Digit Media", "Game Design", "Digital Visualization", "Animation", "Visual Effects" ],
       "Long": "36.305612446086336",
       "Lat": "-82.37190831547737"
     }
-    
+
   },
 
   {
@@ -494,8 +487,8 @@
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "We welcome visitors and guests to ETSU! Should you visit during the week between normal business hours, please stop by Parking Services to receive a guest pass at no charge.",
+      "tags": [ "Parking" ],
       "Long": "36.30484541858612",
       "Lat": "-82.36372847270552"
     }
@@ -507,8 +500,8 @@
     "buildingType": "Sports",
     "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "This state-of-the-art soccer stadium provides a wonderful experience for fans of this international sport.",
+      "tags": [ "Athletics", "Soccer", "Sports" ],
       "Long": "36.29870441443843",
       "Lat": "-82.37716558617957"
     }
@@ -518,10 +511,9 @@
   {
     "buildingName": "Tennis Complex",
     "buildingType": "Stadium",
-    "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "This is where our nationally ranked tennis team takes the court to compete",
+      "tags": [ "Athletics", "Tennis", "Sports" ],
       "Long": "36.297495107567734",
       "Lat": "-82.3761997936754"
     }
@@ -533,8 +525,8 @@
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "Yoakley Hall includes the Veterans Affairs Military Affiliated Student Resource Center which is for family members of veterans, anyone who has served in the military as well as combat veterans. This space includes an exclusive lounge and study space as well as staff members dedicated to this population. Yoakley is also home to the College of Graduate and Continuing Studies offering 120 high quality graduate and professional degree options. ",
+      "tags": [ "Student Resource", "Verterans", "Military" ],
       "Long": "36.30085155798609",
       "Lat": "-82.36876336500151"
     }
@@ -546,8 +538,8 @@
     "buildingType": "General",
     "directionsTo": "",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "For more than 50 years, the Reece Museum has told the many stories of Appalachia. Housing over 20,000 artifacts, the Reece collection captures the region's past as well as its contemporary art and culture.",
+      "tags": [ "Art", "Museum" ],
       "Long": "36.30323797696211",
       "Lat": "-82.36721841274758"
     }
@@ -555,12 +547,11 @@
   },
 
   {
-    "buildingName": "Alumni Plaza/ Carillon",
-    "buildingType": "General",
-    "directionsTo": "Facing Martha Culp Ave, cross the street and turn left to continue along Martha Culp Ave until you reach Stout Dr. Turn right and continue along Stout Dr. Once Gilbreath is on your right, turn left and cross Stout Dr. Continue straight and you will see Carillon and Alumni Plaza.",
+    "buildingName": "Carillon and Alumni Plaza",
+    "buildingType": "general",
     "buildingInfo": {
-      "bio": "This is where students and faculty come to do athletic ativites",
-      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
+      "tags": [ "Alumni", "Bell Tower" ],
       "Long": "36.303869155277646",
       "Lat": "-82.36777631217261"
     }
