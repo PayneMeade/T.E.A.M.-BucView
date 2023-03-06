@@ -25,7 +25,6 @@ namespace BucView.Controllers
                 fromBuilding = HttpUtility.UrlDecode(id); //Decode url parameter
                 toBuilding = tour1.getNext("tour1", fromBuilding);  //Get the next building as a string
                 ViewData["FromBuilding"] = fromBuilding;
-
             }
             var buildingsList = new List<Building>();
             var filepath = FilePath("Building Info");

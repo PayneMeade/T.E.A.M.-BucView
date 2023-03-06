@@ -4,12 +4,12 @@
     ViewData["Title"] = "Directions";
 }
 @{
-    if (ViewData["FromBuilding"]!.Equals("N/A"))
+    if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
     {
         <h1>Start of tour</h1>
         <h1>Directions to @ViewData["ToBuilding"]</h1>
         <p>
-            @Model!.directions
+            @Model!.directionsTo
         </p>
         <a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
     }
@@ -22,7 +22,7 @@
     {
         <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
         <p>
-            @Model!.directions
+            @Model!.directionsTo
         </p>
         <a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
     }
