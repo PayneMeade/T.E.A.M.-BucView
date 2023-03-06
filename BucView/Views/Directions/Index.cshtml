@@ -14,8 +14,8 @@
         <a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
     }
     else if(Model == null){
-        <p>End of tour</p>
-        <p>*Reached end of JSON file</p>
+        <h1>End of tour</h1>
+        <code style="display:block;color:red">*Reached end of JSON file or building names are inconsistent in 'tour.cs' and 'building info.json'</code>
         <a class="btn btn-link" asp-controller="Home" asp-action="Index">Home</a>
     }
     else
