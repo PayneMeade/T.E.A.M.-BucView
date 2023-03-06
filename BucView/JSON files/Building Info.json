@@ -1,592 +1,526 @@
 [
-  {
-    "buildingName": "D.P. Culp Center",
-    "buildingType": "General",
-    "directions": "No directions provided to culp yet",
-    "buildingInfo": {
-      "bio": "This will be the bio of the culp center",
-      "tags": []
-    }
-  },
-  {
-    "buildingName": "Stone Hall",
-    "buildingType": "General",
-    "directions": "Turn away from Culp Center and the building immediately on your left is Stone Hall.",
-    "buildingInfo": {
-      "bio": "This will be the bio of stone hall",
-      "tags": []
-    }
-  },
+  
   {
     "buildingName": "Carter Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "The Ada Earnest House provides students with International oppurtunities and translating services.",
-        "tags": [ "International" ],
-        "long": "36.30050746620785",
-        "Lat": "-82.37156363568066"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "The Ada Earnest House provides students with International oppurtunities and translating services.",
+      "tags": [ "International" ],
+      "long": "36.30050746620785",
+      "Lat": "-82.37156363568066"
+    }
+    
   },
 
   {
     "buildingName": "Ball Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Throughout Ball Hall, the creative works of students in the Department of Art and Design move through various stages of creation. Stop by Slocumb Galleries to see the works of our students on display.",
-        "tags": [ "Performing Arts", "Theatre", "Dance" ],
-        "Long": "36.30359857021866",
-        "Lat": "-82.36927302918724"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Throughout Ball Hall, the creative works of students in the Department of Art and Design move through various stages of creation. Stop by Slocumb Galleries to see the works of our students on display.",
+      "tags": [ "Performing Arts", "Theatre", "Dance" ],
+      "Long": "36.30359857021866",
+      "Lat": "-82.36927302918724"
+    }
+    
   },
 
   {
     "buildingName": "CPA",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "Much more than just a gym, this building not only provides students and employees the space and state-of-the-art equipment they need to maintain physical fitness, but is also the home of intramural sports and a hub of social activity. The Basler Center for Physical Activity is open late so that students can go no matter their schedule.",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.29996705082514",
-        "Lat": "-82.37414928500874"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Much more than just a gym, this building not only provides students and employees the space and state-of-the-art equipment they need to maintain physical fitness, but is also the home of intramural sports and a hub of social activity. The Basler Center for Physical Activity is open late so that students can go no matter their schedule.",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.29996705082514",
+      "Lat": "-82.37414928500874"
+    }
+    
   },
 
   {
     "buildingName": "Brooks Gym",
     "buildingType": "Sports",
-    "buildingInfo": [
-      {
-        "bio": "Watch the Lady Bucs compete in Brooks Gymnasium. The building is also home to the national award-winning ROTC program. And, did you know there is also an aerial dance studio at Brooks Gym?",
-        "tags": [ "Basketball", "ROTC" ],
-        "Long": "36.302761434366836",
-        "Lat": "-82.3700796081959"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Watch the Lady Bucs compete in Brooks Gymnasium. The building is also home to the national award-winning ROTC program. And, did you know there is also an aerial dance studio at Brooks Gym?",
+      "tags": [ "Basketball", "ROTC" ],
+      "Long": "36.302761434366836",
+      "Lat": "-82.3700796081959"
+    }
   },
 
   {
     "buildingName": "Brown Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Labs, classrooms, and offices for Biological Sciences, Chemistry, and Physics and Astronomy are found throughout this building.",
-        "tags": [ "Science", "Biology", "Chemistry", "Physics", "Astronomy" ],
-        "Long": "36.3046970881071",
-        "Lat": "-82.36933496815173"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Labs, classrooms, and offices for Biological Sciences, Chemistry, and Physics and Astronomy are found throughout this building.",
+      "tags": [ "Science", "Biology", "Chemistry", "Physics", "Astronomy" ],
+      "Long": "36.3046970881071",
+      "Lat": "-82.36933496815173"
+    }
+    
   },
 
   {
     "buildingName": "Campus Center",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "Several offices and departments call Campus Center home, including the Department of Theatre and Dance and the George L. Carter Railroad Museum. The ETSU Pridewalk stretches a path outside of the building, displaying murals of several ETSU student organizations to represent their support of pride and civility.",
-        "tags": [ "Theatre", "Dance", "Museum", "Campus" ],
-        "Long": "36.302526806395385",
-        "Lat": "-82.36894865115421"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Several offices and departments call Campus Center home, including the Department of Theatre and Dance and the George L. Carter Railroad Museum. The ETSU Pridewalk stretches a path outside of the building, displaying murals of several ETSU student organizations to represent their support of pride and civility.",
+      "tags": [ "Theatre", "Dance", "Museum", "Campus" ],
+      "Long": "36.302526806395385",
+      "Lat": "-82.36894865115421"
+    }
   },
 
   {
     "buildingName": "Culp Center",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "The newly renovated D.P. Culp Student Center reopened in March 2020. The true living room for ETSU students, the center is where Buccaneers gather for meals, meetings, support services, and simply just to visit with one another. There are plenty of meals options with resturant options on the first floor and the dining hall on the third floor. The big screen in The Cave is a great place to watch events. The common area resembles an adult playground with a slide and putting green for students to relax.",
-        "tags": [ "Campus", "Resources", "Career Services", "Dining", "Food" ],
-        "Long": "36.30148902039849",
-        "Lat": "-82.36671193181955"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "The newly renovated D.P. Culp Student Center reopened in March 2020. The true living room for ETSU students, the center is where Buccaneers gather for meals, meetings, support services, and simply just to visit with one another. There are plenty of meals options with resturant options on the first floor and the dining hall on the third floor. The big screen in The Cave is a great place to watch events. The common area resembles an adult playground with a slide and putting green for students to relax.",
+      "tags": [ "Campus", "Resources", "Career Services", "Dining", "Food" ],
+      "Long": "36.30148902039849",
+      "Lat": "-82.36671193181955"
+    }
   },
 
   {
     "buildingName": "Football Stadium",
     "buildingType": "Sports",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Sports", "Football" ],
-        "Long": "36.29900852785898",
-        "Lat": "-82.3738024878832"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Sports", "Football" ],
+      "Long": "36.29900852785898",
+      "Lat": "-82.3738024878832"
+    }
+    
   },
 
   {
     "buildingName": "Gilbreth Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "One of the first buildings constructed on the campus, Gilbreath Hall is home to the College of Arts and Sciences administration as well as the Department of Mathematics and Statistics.",
-        "tags": [ "Art", "Science", "Math", "Statistics"],
-        "Long": "36.30345996307139",
-        "Lat": "-82.36851054069055"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "One of the first buildings constructed on the campus, Gilbreath Hall is home to the College of Arts and Sciences administration as well as the Department of Mathematics and Statistics.",
+      "tags": [ "Art", "Science", "Math", "Statistics" ],
+      "Long": "36.30345996307139",
+      "Lat": "-82.36851054069055"
+    }
+    
   },
 
   {
     "buildingName": "Governors Hall",
     "buildingType": "Residence",
-    "buildingInfo": [
-      {
-        "bio": "Governors Hall is a co-ed residence hall in the style of double occupancy with private bath. Governors Hall has a variety of small and large gathering spaces, a grand staircase and fire place, and easy access to Tri-Hall Field, a great space on campus for outdoor recreation and socializing. Residents are directly across the street from Sherrod Library and a short walk to the D.P. Culp Student Center! Governors Hall houses the Public Service Corps and STEM living-learning communities.",
-        "tags": [ "Dorm", "Residence hall", "Rooms" ],
-        "Long": "36.30312031387108",
-        "Lat": "-82.36492371059069"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Governors Hall is a co-ed residence hall in the style of double occupancy with private bath. Governors Hall has a variety of small and large gathering spaces, a grand staircase and fire place, and easy access to Tri-Hall Field, a great space on campus for outdoor recreation and socializing. Residents are directly across the street from Sherrod Library and a short walk to the D.P. Culp Student Center! Governors Hall houses the Public Service Corps and STEM living-learning communities.",
+      "tags": [ "Dorm", "Residence hall", "Rooms" ],
+      "Long": "36.30312031387108",
+      "Lat": "-82.36492371059069"
+    }
+    
   },
 
   {
     "buildingName": "Hutcheson Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Hutcheson Hall is where students learn nutrition and rehabilitative health sciences. It is also home to the campus planetarium that welcomes students and guests every year.",
-        "tags": [ "Nutrition", "Health Science", "Planetarium" ],
-        "Long": "36.30119741800853",
-        "Lat": "-82.36991915394594"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Hutcheson Hall is where students learn nutrition and rehabilitative health sciences. It is also home to the campus planetarium that welcomes students and guests every year.",
+      "tags": [ "Nutrition", "Health Science", "Planetarium" ],
+      "Long": "36.30119741800853",
+      "Lat": "-82.36991915394594"
+    }
   },
 
   {
     "buildingName": "Lamb Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Lamb Hall is home to two major health science programs: the College of Public Health and the College of Clinical and Rehabilitative Health Sciences.",
-        "tags": [ "Health", "Public Health", "Clinical Health", "Rehabilitive Health"],
-        "Long": "36.30144737741691",
-        "Lat": "-82.36940717361453"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Lamb Hall is home to two major health science programs: the College of Public Health and the College of Clinical and Rehabilitative Health Sciences.",
+      "tags": [ "Health", "Public Health", "Clinical Health", "Rehabilitive Health" ],
+      "Long": "36.30144737741691",
+      "Lat": "-82.36940717361453"
+    }
+    
   },
 
   {
     "buildingName": "Sherrod Library",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "The heartbeat of every campus is its library.  Named in honor of a former ETSU president, the Sherrod Library offers access to hundreds of journals and online resources as well as study space, meeting rooms, late-night study areas, and a coffee stand! The library is open 24/7 for students and contains Testing Services and Tutoring services for students.",
-        "tags": [ "Books", "Campus", "Library" ],
-        "Long": "36.302605073678166",
-        "Lat": "-82.36577730758935"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "The heartbeat of every campus is its library.  Named in honor of a former ETSU president, the Sherrod Library offers access to hundreds of journals and online resources as well as study space, meeting rooms, late-night study areas, and a coffee stand! The library is open 24/7 for students and contains Testing Services and Tutoring services for students.",
+      "tags": [ "Books", "Campus", "Library" ],
+      "Long": "36.302605073678166",
+      "Lat": "-82.36577730758935"
+    }
+    
   },
 
   {
     "buildingName": "Lucile-CLement Hall",
     "buildingType": "Residence",
-    "buildingInfo": [
-      {
-        "bio": "Named for a former Tennessee First Lady, Lucille Clement Hall is a popular residence hall that houses the Art, Buccaneer Achievers, BUCS Academy, Innovations, and Inspire living-learning communities.  It is a traditional co-ed hall. Residents in Lucille Clement enjoy convenient access to the Basler Center for Physical Activity (CPA) and Greene Football Stadium!",
-        "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
-        "Long": "36.300160496500595",
-        "Lat": "-82.37219709529167"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Named for a former Tennessee First Lady, Lucille Clement Hall is a popular residence hall that houses the Art, Buccaneer Achievers, BUCS Academy, Innovations, and Inspire living-learning communities.  It is a traditional co-ed hall. Residents in Lucille Clement enjoy convenient access to the Basler Center for Physical Activity (CPA) and Greene Football Stadium!",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
+      "Long": "36.300160496500595",
+      "Lat": "-82.37219709529167"
+    }
+    
   },
 
   {
     "buildingName": "Lunsford Apartments",
     "buildingType": "Residence",
-    "buildingInfo": [
-      {
-        "bio": "Many ETSU students choose the all-women's Luntsford Apartments because of the kitchenettes that are located in each room. The Luntsford community has historically boasted one of the highest percentages of students on the Dean’s List in each of the past eight semesters. Residents are adjacent to Greene Football Stadium and enjoy easy access to the Basler Center for Physical Activity (CPA)!",
-        "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Women" ],
-        "Long": "36.29916781365964",
-        "Lat": "-82.37228613533767"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Many ETSU students choose the all-women's Luntsford Apartments because of the kitchenettes that are located in each room. The Luntsford community has historically boasted one of the highest percentages of students on the Dean’s List in each of the past eight semesters. Residents are adjacent to Greene Football Stadium and enjoy easy access to the Basler Center for Physical Activity (CPA)!",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Women" ],
+      "Long": "36.29916781365964",
+      "Lat": "-82.37228613533767"
+    }
+    
   },
 
   {
     "buildingName": "Minidome",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "Though the Dome provides space for athletics administration and ETSU's exercise and sports research labs, it is also here where students cross the stage to receive their degrees at Commencement every fall and spring.",
-        "tags": [ "Athletics", "Sports", "Activity", "Graduation" ],
-        "Long": "36.303913441139684",
-        "Lat": "-82.37084665447274"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Though the Dome provides space for athletics administration and ETSU's exercise and sports research labs, it is also here where students cross the stage to receive their degrees at Commencement every fall and spring.",
+      "tags": [ "Athletics", "Sports", "Activity", "Graduation" ],
+      "Long": "36.303913441139684",
+      "Lat": "-82.37084665447274"
+    }
+    
   },
 
   {
     "buildingName": "Nicks Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "You will see many students entering and exiting Nicks Hall wearing scrubs and white coats.  Nicks Hall is home to the College of Nursing, which has one of the largest nursing enrollments in the state.  The fourth floor is dedicated to Information Technology Support and Computing.",
-        "tags": [ "Nursing", "Information Technology", "Computing" ],
-        "Long": "36.3026026817628",
-        "Lat": "-82.3677718046802"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "You will see many students entering and exiting Nicks Hall wearing scrubs and white coats.  Nicks Hall is home to the College of Nursing, which has one of the largest nursing enrollments in the state.  The fourth floor is dedicated to Information Technology Support and Computing.",
+      "tags": [ "Nursing", "Information Technology", "Computing" ],
+      "Long": "36.3026026817628",
+      "Lat": "-82.3677718046802"
+    }
+    
   },
 
   {
     "buildingName": "Powell Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
-        "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Men" ],
-        "Long": "36.30033511170951",
-        "Lat": "-82.36974849380643"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Men" ],
+      "Long": "36.30033511170951",
+      "Lat": "-82.36974849380643"
+    }
+    
   },
 
   {
     "buildingName": "Roger Stout Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Many social science programs, including History, Psychology, Philosophy and Humanities, Sociology, Criminal Justice, and Political Science, are housed in Rogers-Stout Hall.",
-        "tags": [ "Social Science", "Psychologoy", "Philosophy", "Humanities", "Sociology", "Criminal Justice", "Political Science" ],
-        "Long": "36.30332742917991",
-        "Lat": "-82.36618689177311"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Many social science programs, including History, Psychology, Philosophy and Humanities, Sociology, Criminal Justice, and Political Science, are housed in Rogers-Stout Hall.",
+      "tags": [ "Social Science", "Psychologoy", "Philosophy", "Humanities", "Sociology", "Criminal Justice", "Political Science" ],
+      "Long": "36.30332742917991",
+      "Lat": "-82.36618689177311"
+    }
+    
   },
 
   {
     "buildingName": "Ross Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Once a residence hall and home of several sororities, Ross Hall now provides classroom and lab space for ETSU's Department of Geosciences and houses the prestigious Roan Scholars Leadership Program.",
-        "tags": [ "Geoscience", "Science", "Roan Scholars" ],
-        "Long": "36.30014853655912",
-        "Lat": "-82.37019072609736"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Once a residence hall and home of several sororities, Ross Hall now provides classroom and lab space for ETSU's Department of Geosciences and houses the prestigious Roan Scholars Leadership Program.",
+      "tags": [ "Geoscience", "Science", "Roan Scholars" ],
+      "Long": "36.30014853655912",
+      "Lat": "-82.37019072609736"
+    }
+    
   },
 
   {
     "buildingName": "Sam-Wilson Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Tomorrow's leaders in business begin their training here in the College of Business and Technology.",
-        "tags": [ "Business", "Marketing", "Computing", "Economics", "Accounting"],
-        "Long": "36.30245176286553",
-        "Lat": "-82.3698706387181"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Tomorrow's leaders in business begin their training here in the College of Business and Technology.",
+      "tags": [ "Business", "Marketing", "Computing", "Economics", "Accounting" ],
+      "Long": "36.30245176286553",
+      "Lat": "-82.3698706387181"
+    }
+    
   },
 
   {
     "buildingName": "Stone Hall",
     "buildingType": "Residence",
-    "buildingInfo": [
-      {
-        "bio": "The double-occupancy rooms of Stone Hall offer in-suite baths. Residents in Stone Hall enjoy being next door to the D.P. Culp Student Center and University Commons with close access to a variety of academic buildings. The hall is co-ed by suite and home to the pre-health living community.",
-        "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
-        "Long": "36.30106084768675",
-        "Lat": "-82.36800702669186"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "The double-occupancy rooms of Stone Hall offer in-suite baths. Residents in Stone Hall enjoy being next door to the D.P. Culp Student Center and University Commons with close access to a variety of academic buildings. The hall is co-ed by suite and home to the pre-health living community.",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
+      "Long": "36.30106084768675",
+      "Lat": "-82.36800702669186"
+    }
+    
   },
 
   {
     "buildingName": "The Treehouse",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "Need good food in a hurry? Then stop by the Treehouse Takeout! Our made to order sandwiches, salads, and wraps are made from fresh ingredients and designed with your taste in mind! Need something to warm you up? Grab a bowl of our hot and delicious soup of the day! No cash? No problem! Use a meal swipe at this location and get one of our delicious combo meals!",
-        "tags": [ "Food", "Snack", "Dining" ],
-        "Long": "36.30322245640903",
-        "Lat": "-82.36993285267168"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Need good food in a hurry? Then stop by the Treehouse Takeout! Our made to order sandwiches, salads, and wraps are made from fresh ingredients and designed with your taste in mind! Need something to warm you up? Grab a bowl of our hot and delicious soup of the day! No cash? No problem! Use a meal swipe at this location and get one of our delicious combo meals!",
+      "tags": [ "Food", "Snack", "Dining" ],
+      "Long": "36.30322245640903",
+      "Lat": "-82.36993285267168"
+    }
   },
 
   {
     "buildingName": "West Hall",
     "buildingType": "Residence",
-    "buildingInfo": [
-      {
-        "bio": "West Hall is a traditional women's residence hall with shared bathrooms on each floor. Residents in West Hall enjoy close proximity to the Basler Center for Physical Activity (CPA) and Greene Football Stadium!",
-        "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Women" ],
-        "Long": "36.299889230703236",
-        "Lat": "-82.37076433753569"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "West Hall is a traditional women's residence hall with shared bathrooms on each floor. Residents in West Hall enjoy close proximity to the Basler Center for Physical Activity (CPA) and Greene Football Stadium!",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Women" ],
+      "Long": "36.299889230703236",
+      "Lat": "-82.37076433753569"
+    }
+    
   },
 
   {
     "buildingName": "Wilson-Wallis Hall",
     "buildingType": "Academic",
-    "buildingInfo": [
-      {
-        "bio": "Wilson-Wallis Hall is where you will find students in ETSU's engineering and other technology-based programs. Students of the college can also find internship information here. ",
-        "tags": ["Technology", "Engineering"],
-        "Long": "36.30098735190804",
-        "Lat": "-82.37067314243737"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Wilson-Wallis Hall is where you will find students in ETSU's engineering and other technology-based programs. Students of the college can also find internship information here. ",
+      "tags": [ "Technology", "Engineering" ],
+      "Long": "36.30098735190804",
+      "Lat": "-82.37067314243737"
+    }
+    
   },
 
   {
     "buildingName": "Burgin-Dosset Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "The administration building for ETSU, Burgin Dossett Hall includes offices of Admission, Financial Aid Scholarships, Registration, and the Bursar.",
-        "tags": ["Admission", "Financial Aid", "Scholarships", "Registration", "Bursar"],
-        "Long": "36.304191183253096",
-        "Lat": "-82.36684980202592"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "The administration building for ETSU, Burgin Dossett Hall includes offices of Admission, Financial Aid Scholarships, Registration, and the Bursar.",
+      "tags": [ "Admission", "Financial Aid", "Scholarships", "Registration", "Bursar" ],
+      "Long": "36.304191183253096",
+      "Lat": "-82.36684980202592"
+    }
+    
   },
 
   {
     "buildingName": "Carter Hall",
-    "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30143656674287",
-        "Lat": "-82.36850424659629"
-      }
-    ]
+    "buildingType": "Residence",
+    "buildingInfo": {
+      "bio": "Carter Hall is one of the oldest buildings on campus and is named for Mayella Carter, whose husband, George L Carter donated the land on which ETSU now stands. This building is a co-ed residence hall of many different types and sizes of rooms. It also houses two Living Learning Communities, the Honors and Global LLCs. The first floor also houses offices for the Honors College, Study Abroad, and Nationally Competitive Scholarships. At the heart of campus, Carter Hall is directly across from the ETSU Amphitheater, D.P. Culp Student Center, and University Commons, in close proximity to a number of academic buildings!",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Co-ed" ],
+      "Long": "36.30143656674287",
+      "Lat": "-82.36850424659629"
+    }
+    
   },
 
   {
     "buildingName": "Centennial Hall",
-    "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30446641393668",
-        "Lat": "-82.36406440042393"
-      }
-    ]
+    "buildingType": "Residence",
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
+      "Long": "36.30446641393668",
+      "Lat": "-82.36406440042393"
+    }
+    
   },
 
   {
     "buildingName": "Davis Apartments",
-    "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30373095924773",
-        "Lat": "-82.36338134720339"
-      }
-    ]
+    "buildingType": "Residence",
+    "buildingInfo": {
+      "bio": "Co-ed Davis Apartments offer an efficiency-style option and include kichenettes and private baths.",
+      "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
+      "Long": "36.30373095924773",
+      "Lat": "-82.36338134720339"
+    }
+    
   },
 
   {
     "buildingName": "ETSU Family Mediicine Associates",
-    "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30610875400314",
-        "Lat": "-82.36679101463977"
-      }
-    ]
+    "buildingType": "Health",
+    "buildingInfo": {
+      "bio": "Other than the University Health Clinic inside Nicks Hall, ETSU Family Medicine Associates is the nearest medical office to ETSU.",
+      "tags": [ "Health" ],
+      "Long": "36.30610875400314",
+      "Lat": "-82.36679101463977"
+    }
+    
   },
 
   {
     "buildingName": "Parking Garage - C Store",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30324366029418",
-        "Lat": "-82.37200349493399"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "Grab what you need on your way to class or as you prepare to return home.",
+      "tags": [ "Parking", "Store", "Food" ],
+      "Long": "36.30324366029418",
+      "Lat": "-82.37200349493399"
+    }
+    
   },
 
   {
     "buildingName": "Lyle House",
-    "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30109138678363",
-        "Lat": "-82.37193071062076"
-      }
-    ]
+    "buildingType": "Academic",
+    "buildingInfo": {
+      "bio": "The Lyle House serves as the home for ETSU's Department of Social Work.",
+      "tags": [ "Social Work" ],
+      "Long": "36.30109138678363",
+      "Lat": "-82.37193071062076"
+    }
+    
   },
 
   {
     "buildingName": "Martin Center for the Arts",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.3046829882265",
-        "Lat": "-82.37192511177751"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.3046829882265",
+      "Lat": "-82.37192511177751"
+    }
+    
   },
 
   {
     "buildingName": "Mathes Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30386180753432",
-        "Lat": "-82.36961840736399"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.30386180753432",
+      "Lat": "-82.36961840736399"
+    }
+    
   },
 
   {
     "buildingName": "Milenniumm Center",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30576585069065",
-        "Lat": "-82.37121966326296"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.30576585069065",
+      "Lat": "-82.37121966326296"
+    }
+    
   },
 
   {
     "buildingName": "National Alumni Association",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.306023028330706",
-        "Lat": "-82.36673502661672"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.306023028330706",
+      "Lat": "-82.36673502661672"
+    }
+    
   },
 
   {
     "buildingName": "Nell Dossett Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.29952564948258",
-        "Lat": "-82.37153879464798"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.29952564948258",
+      "Lat": "-82.37153879464798"
+    }
+    
   },
 
   {
     "buildingName": "Niswonger Digital Media Center",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.305612446086336",
-        "Lat": "-82.37190831547737"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.305612446086336",
+      "Lat": "-82.37190831547737"
+    }
+    
   },
 
   {
     "buildingName": "Parking Services",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30484541858612",
-        "Lat": "-82.36372847270552"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.30484541858612",
+      "Lat": "-82.36372847270552"
+    }
+    
   },
 
   {
     "buildingName": "Summers-Taylor Soccer Complex",
     "buildingType": "Sports",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.29870441443843",
-        "Lat": "-82.37716558617957"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.29870441443843",
+      "Lat": "-82.37716558617957"
+    }
+    
   },
 
   {
     "buildingName": "Tennis Complex",
     "buildingType": "Stadium",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.297495107567734",
-        "Lat": "-82.3761997936754"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.297495107567734",
+      "Lat": "-82.3761997936754"
+    }
+    
   },
 
   {
     "buildingName": "Yoakley Hall",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30085155798609",
-        "Lat": "-82.36876336500151"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.30085155798609",
+      "Lat": "-82.36876336500151"
+    }
+    
   },
 
   {
     "buildingName": "B. Caroll Reece Museum",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.30323797696211",
-        "Lat": "-82.36721841274758"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.30323797696211",
+      "Lat": "-82.36721841274758"
+    }
+    
   },
 
   {
     "buildingName": "Alumni Plaza/ Carillon",
     "buildingType": "general",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ],
-        "Long": "36.303869155277646",
-        "Lat": "-82.36777631217261"
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ],
+      "Long": "36.303869155277646",
+      "Lat": "-82.36777631217261"
+    }
+    
   }
 ]
 
