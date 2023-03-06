@@ -8,32 +8,32 @@ namespace BucView.Controllers
 {
     public class DirectionsController : Controller
     {
-        public IActionResult Index(string id)
+        public IActionResult Index(string id)   //Id = Current Building as a string
         {
             Building building = new Building();
             string toBuilding;
             string fromBuilding;
             var tour1 = new Tour();
-            if (id == null)
+            if (id == null) //If start of tour...
             {
-                toBuilding = tour1.getNext("tour1","");
-                fromBuilding = "N/A";
+                toBuilding = tour1.getNext("tour1",""); //Find first building in the list
+                fromBuilding = "N/A";   
                 ViewData["FromBuilding"] = fromBuilding;
             }
             else
             {
-                fromBuilding = HttpUtility.UrlDecode(id);
-                toBuilding = tour1.getNext("tour1", fromBuilding);
+                fromBuilding = HttpUtility.UrlDecode(id); //Decode url parameter
+                toBuilding = tour1.getNext("tour1", fromBuilding);  //Get the next building as a string
                 ViewData["FromBuilding"] = fromBuilding;
 
             }
             var buildingsList = new List<Building>();
             var filepath = FilePath("Building Info");
-            var jsonText = System.IO.File.ReadAllText(FilePath("Building Info"));
-            buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText);
-            building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!;
+            var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
+            buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
+            building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
             ViewData["ToBuilding"] = toBuilding;
-            return View(building);
+            return View(building);  //Pass model to view
         }
         public string FilePath(string fileName)
         {
