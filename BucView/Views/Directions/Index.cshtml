@@ -8,14 +8,24 @@
     {
         <h1>Start of tour</h1>
         <h1>Directions to @ViewData["ToBuilding"]</h1>
+        <p>
+            @Model!.directions
+        </p>
+        <a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+    }
+    else if(Model == null){
+        <p>End of tour</p>
+        <p>*Reached end of JSON file</p>
+        <a class="btn btn-link" asp-controller="Home" asp-action="Index">Home</a>
     }
     else
     {
         <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
+        <p>
+            @Model!.directions
+        </p>
+        <a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
     }
 }
-<p>
-    @Model.directions
-</p>
 
-<a class="btn btn-link" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+
