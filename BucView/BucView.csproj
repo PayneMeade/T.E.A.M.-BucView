@@ -16,9 +16,9 @@
     <None Include="wwwroot\Images\Brooks_Gym.jpg" />
     <None Include="wwwroot\Images\Brown_Hall.jpg" />
     <None Include="wwwroot\Images\Campus_Center_Building.jpg" />
-    <None Include="wwwroot\Images\Carter_Hall.jpg" />
+    <None Include="wwwroot\Images\Carter Hall.jpg" />
     <None Include="wwwroot\Images\cpa_image.jpg" />
-    <None Include="wwwroot\Images\Culp_Center.jpg" />
+    <None Include="wwwroot\Images\D.P. Culp Center.jpg" />
     <None Include="wwwroot\Images\etsu-shield.jpg" />
     <None Include="wwwroot\Images\etsu.jpg" />
     <None Include="wwwroot\Images\Football_Stadium.jpg" />
@@ -35,7 +35,7 @@
     <None Include="wwwroot\Images\Rogers_Stout_Hall.jpg" />
     <None Include="wwwroot\Images\Ross_Hall.jpg" />
     <None Include="wwwroot\Images\Sam_Wilson_Hall.jpg" />
-    <None Include="wwwroot\Images\Stone_Hall.jpg" />
+    <None Include="wwwroot\Images\Stone Hall.jpg" />
     <None Include="wwwroot\Images\Treehouse.jpg" />
     <None Include="wwwroot\Images\West_Hall.jpg" />
     <None Include="wwwroot\Images\Wilson_Wallis_Hall.jpg" />

@@ -1,26 +1,47 @@
 [
   {
-    "buildingName": "ADA Earnest House",
+    "buildingName": "D.P. Culp Center",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This will be the bio",
-        "image": "../Views/Images/Ada_Earnest_House.jpg",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ]
-      }
-    ]
+    "directions": "No directions provided to culp yet",
+    "buildingInfo": {
+      "bio": "This will be the bio of the culp center",
+      "tags": []
+    }
+  },
+  {
+    "buildingName": "Stone Hall",
+    "buildingType": "General",
+    "directions": "Turn away from Culp Center and the building immediately on your left is Stone Hall.",
+    "buildingInfo": {
+      "bio": "This will be the bio of stone hall",
+      "tags": []
+    }
+  },
+  {
+    "buildingName": "Carter Hall",
+    "buildingType": "General",
+    "directions": "Facing away from Stone Hall, walk across the University Commons and you will see Carter Hall",
+    "buildingInfo": {
+      "bio": "This will be the bio of carter hall",
+      "tags": []
+    }
+  },
+  {
+    "buildingName": "Ada Earnest House",
+    "buildingType": "General",
+    "buildingInfo": {
+      "bio": "This will be the bio",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ]
+    }
   },
 
   {
     "buildingName": "CPA",
     "buildingType": "General",
-    "buildingInfo": [
-      {
-        "bio": "This is where students and faculty come to do athletic ativites",
-        "image": "../Views/Images/cpa_image.jpg",
-        "tags": [ "Gym", "Workout", "Sports", "Activity" ]
-      }
-    ]
+    "buildingInfo": {
+      "bio": "This is where students and faculty come to do athletic ativites",
+      "tags": [ "Gym", "Workout", "Sports", "Activity" ]
+    }
   }
 ]
 
