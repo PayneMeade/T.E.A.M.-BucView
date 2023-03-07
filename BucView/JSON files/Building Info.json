@@ -124,7 +124,7 @@
       "Long": "36.30312031387108",
       "Lat": "-82.36492371059069"
     }
-    
+
   },
 
   {
@@ -203,18 +203,30 @@
     }
 
   },
+  {
+    "buildingName": "Warf-Pickel Hall",
+    "buildingType": "General",
+    "directionsTo": "Facing away from the Basler Center for Physical Activity, cross Jack Vest Dr and turn left. Continue until you come to David Collins Way. Turn right and walk along David Collins Way. Continue along David Collins Way until you come to John Robert Bell Dr. Turn left and cross David Collins Way. The building on your left is Warf-Pickel Hall ",
+    "buildingInfo": {
+      "bio": "ETSU began as a teacher preparation school in 1911, and it is in Warf-Pickel Hall where the Clemmer College and our teacher preparation programs are housed.  Warf-Pickel is also home of our Department of Media and Communication, and features a TV studio where students hone their skills in broadcasting.",
+      "tags": [],
+      "Long": "36.30233595769794",
+      "Lat": "-82.37188999960809"
+    }
+
+  },
 
   {
     "buildingName": "Nicks Hall",
     "buildingType": "Academic",
-    "directionsTo": "", 
+    "directionsTo": "",
     "buildingInfo": {
       "bio": "You will see many students entering and exiting Nicks Hall wearing scrubs and white coats.  Nicks Hall is home to the College of Nursing, which has one of the largest nursing enrollments in the state.  The fourth floor is dedicated to Information Technology Support and Computing.",
       "tags": [ "Nursing", "Information Technology", "Computing" ],
       "Long": "36.3026026817628",
       "Lat": "-82.3677718046802"
     }
-    
+
   },
 
   {
@@ -329,7 +341,7 @@
       "Long": "36.304191183253096",
       "Lat": "-82.36684980202592"
     }
-    
+
   },
 
   {
@@ -355,7 +367,7 @@
       "Long": "36.30446641393668",
       "Lat": "-82.36406440042393"
     }
-    
+
   },
 
   {
@@ -368,7 +380,7 @@
       "Long": "36.30373095924773",
       "Lat": "-82.36338134720339"
     }
-    
+
   },
 
   {
@@ -381,7 +393,7 @@
       "Long": "36.30610875400314",
       "Lat": "-82.36679101463977"
     }
-    
+
   },
 
   {
@@ -393,7 +405,7 @@
       "Long": "36.30324366029418",
       "Lat": "-82.37200349493399"
     }
-    
+
   },
 
   {
@@ -406,7 +418,7 @@
       "Long": "36.30109138678363",
       "Lat": "-82.37193071062076"
     }
-    
+
   },
 
   {
@@ -419,7 +431,7 @@
       "Long": "36.3046829882265",
       "Lat": "-82.37192511177751"
     }
-    
+
   },
 
   {
@@ -431,7 +443,7 @@
       "Long": "36.30386180753432",
       "Lat": "-82.36961840736399"
     }
-    
+
   },
 
   {
@@ -455,7 +467,7 @@
       "Long": "36.306023028330706",
       "Lat": "-82.36673502661672"
     }
-    
+
   },
 
   {
@@ -467,7 +479,7 @@
       "Long": "36.29952564948258",
       "Lat": "-82.37153879464798"
     }
-    
+
   },
 
   {
@@ -492,7 +504,7 @@
       "Long": "36.30484541858612",
       "Lat": "-82.36372847270552"
     }
-    
+
   },
 
   {
@@ -505,7 +517,7 @@
       "Long": "36.29870441443843",
       "Lat": "-82.37716558617957"
     }
-    
+
   },
 
   {
@@ -517,7 +529,7 @@
       "Long": "36.297495107567734",
       "Lat": "-82.3761997936754"
     }
-    
+
   },
 
   {
@@ -530,7 +542,7 @@
       "Long": "36.30085155798609",
       "Lat": "-82.36876336500151"
     }
-    
+
   },
 
   {
@@ -543,7 +555,7 @@
       "Long": "36.30323797696211",
       "Lat": "-82.36721841274758"
     }
-    
+
   },
 
   {
