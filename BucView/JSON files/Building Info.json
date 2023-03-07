@@ -79,7 +79,7 @@
   {
     "buildingName": "D.P. Culp Center",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "not provided yet",
     "buildingInfo": {
       "bio": "The newly renovated D.P. Culp Student Center reopened in March 2020. The true living room for ETSU students, the center is where Buccaneers gather for meals, meetings, support services, and simply just to visit with one another. There are plenty of meals options with resturant options on the first floor and the dining hall on the third floor. The big screen in The Cave is a great place to watch events. The common area resembles an adult playground with a slide and putting green for students to relax.",
       "tags": [ "Campus", "Resources", "Career Services", "Dining", "Food" ],
@@ -191,6 +191,7 @@
 
   },
 
+  {
   {
     "buildingName": "ETSU Athletic Center",
     "buildingType": "General",
