@@ -117,7 +117,7 @@
   {
     "buildingName": "Governors Hall",
     "buildingType": "Residence",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Governors Hall is a co-ed residence hall in the style of double occupancy with private bath. Governors Hall has a variety of small and large gathering spaces, a grand staircase and fire place, and easy access to Tri-Hall Field, a great space on campus for outdoor recreation and socializing. Residents are directly across the street from Sherrod Library and a short walk to the D.P. Culp Student Center! Governors Hall houses the Public Service Corps and STEM living-learning communities.",
       "tags": [ "Dorm", "Residence hall", "Rooms" ],
@@ -209,7 +209,7 @@
     "directionsTo": "Facing away from the Basler Center for Physical Activity, cross Jack Vest Dr and turn left. Continue until you come to David Collins Way. Turn right and walk along David Collins Way. Continue along David Collins Way until you come to John Robert Bell Dr. Turn left and cross David Collins Way. The building on your left is Warf-Pickel Hall ",
     "buildingInfo": {
       "bio": "ETSU began as a teacher preparation school in 1911, and it is in Warf-Pickel Hall where the Clemmer College and our teacher preparation programs are housed.  Warf-Pickel is also home of our Department of Media and Communication, and features a TV studio where students hone their skills in broadcasting.",
-      "tags": [],
+      "tags": ["Education", "Teaching", "Communications", "Media"],
       "Long": "36.30233595769794",
       "Lat": "-82.37188999960809"
     }
@@ -219,7 +219,7 @@
   {
     "buildingName": "Nicks Hall",
     "buildingType": "Academic",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "You will see many students entering and exiting Nicks Hall wearing scrubs and white coats.  Nicks Hall is home to the College of Nursing, which has one of the largest nursing enrollments in the state.  The fourth floor is dedicated to Information Technology Support and Computing.",
       "tags": [ "Nursing", "Information Technology", "Computing" ],
@@ -232,6 +232,7 @@
   {
     "buildingName": "Powell Hall",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
       "tags": [ "Dorm", "Residence Hall", "Living", "Rooms", "Men" ],
@@ -334,7 +335,7 @@
   {
     "buildingName": "Burgin-Dosset Hall",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "The administration building for ETSU, Burgin Dossett Hall includes offices of Admission, Financial Aid Scholarships, Registration, and the Bursar.",
       "tags": [ "Admission", "Financial Aid", "Scholarships", "Registration", "Bursar" ],
@@ -360,7 +361,7 @@
   {
     "buildingName": "Centennial Hall",
     "buildingType": "Residence",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "This is where students and faculty come to do athletic ativites",
       "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
@@ -373,7 +374,7 @@
   {
     "buildingName": "Davis Apartments",
     "buildingType": "Residence",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Co-ed Davis Apartments offer an efficiency-style option and include kichenettes and private baths.",
       "tags": [ "Dorm", "Residence Hall", "Living", "Rooms" ],
@@ -386,7 +387,7 @@
   {
     "buildingName": "ETSU Family Mediicine Associates",
     "buildingType": "Health",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Other than the University Health Clinic inside Nicks Hall, ETSU Family Medicine Associates is the nearest medical office to ETSU.",
       "tags": [ "Health" ],
@@ -399,6 +400,7 @@
   {
     "buildingName": "Parking Garage - C Store",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Grab what you need on your way to class or as you prepare to return home.",
       "tags": [ "Parking", "Store", "Food" ],
@@ -411,7 +413,7 @@
   {
     "buildingName": "Lyle House",
     "buildingType": "Academic",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "The Lyle House serves as the home for ETSU's Department of Social Work.",
       "tags": [ "Social Work" ],
@@ -424,7 +426,7 @@
   {
     "buildingName": "Martin Center for the Arts",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Home to a large auditorium, a black box theater, and a rehearsal hall, the Martin Center for the Arts is a hub for artistic performances by students and community groups as well as touring productions.",
       "tags": [ "Performing Arts", "Theatre", "Auditorium" ],
@@ -437,6 +439,7 @@
   {
     "buildingName": "Mathes Hall",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Choral and instrumental sounds can be heard in every hallway of Mathes Hall, home to the ETSU Department of Music.",
       "tags": [ "Music", "Band", "Orchestra" ],
@@ -449,6 +452,7 @@
   {
     "buildingName": "Milenniumm Center",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Located across the street from the main campus and accessed via the ETSU Skywalk, the Millennium Center is where you will find classes and offices for the Department of Computing. The Millennium Center also offers event space for organizations and community partners to reserve rooms for meetings, retreats, and other events.",
       "tags": [ "Computing", "Computer Science", "Technology" ],
@@ -461,6 +465,7 @@
   {
     "buildingName": "National Alumni Association",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Once a Buccaneer, always a Buccaneer! The ETSU National Alumni Association connects alumni from all over the globe with campus events and opportunities. ",
       "tags": [ "Alumni" ],
@@ -473,6 +478,7 @@
   {
     "buildingName": "Nell Dossett Hall",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "ETSU offers its students, faculty, and staff support through the university's Counseling Center, located inside Nell Dossett Hall. The Counseling Center offers personal counseling, workshops, drop-in talk sessions, and more.",
       "tags": [ "Counseling", "mental health" ],
@@ -485,6 +491,7 @@
   {
     "buildingName": "Niswonger Digital Media Center",
     "buildingType": "General",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Housed here is the Digital Media program that provides students with technical knowledge and an understanding of aesthetics to become digital media professionals capable of working at the highest artistic and technical levels. The program includes concentrations in digital animation, digital game design, digital visualization, and visual effects.",
       "tags": [ "Digit Media", "Game Design", "Digital Visualization", "Animation", "Visual Effects" ],
@@ -497,7 +504,7 @@
   {
     "buildingName": "Parking Services",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "We welcome visitors and guests to ETSU! Should you visit during the week between normal business hours, please stop by Parking Services to receive a guest pass at no charge.",
       "tags": [ "Parking" ],
@@ -510,7 +517,7 @@
   {
     "buildingName": "Summers-Taylor Soccer Complex",
     "buildingType": "Sports",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "This state-of-the-art soccer stadium provides a wonderful experience for fans of this international sport.",
       "tags": [ "Athletics", "Soccer", "Sports" ],
@@ -523,6 +530,7 @@
   {
     "buildingName": "Tennis Complex",
     "buildingType": "Stadium",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "This is where our nationally ranked tennis team takes the court to compete",
       "tags": [ "Athletics", "Tennis", "Sports" ],
@@ -535,7 +543,7 @@
   {
     "buildingName": "Yoakley Hall",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "Yoakley Hall includes the Veterans Affairs Military Affiliated Student Resource Center which is for family members of veterans, anyone who has served in the military as well as combat veterans. This space includes an exclusive lounge and study space as well as staff members dedicated to this population. Yoakley is also home to the College of Graduate and Continuing Studies offering 120 high quality graduate and professional degree options. ",
       "tags": [ "Student Resource", "Verterans", "Military" ],
@@ -548,7 +556,7 @@
   {
     "buildingName": "B. Caroll Reece Museum",
     "buildingType": "General",
-    "directionsTo": "",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "For more than 50 years, the Reece Museum has told the many stories of Appalachia. Housing over 20,000 artifacts, the Reece collection captures the region's past as well as its contemporary art and culture.",
       "tags": [ "Art", "Museum" ],
@@ -561,6 +569,7 @@
   {
     "buildingName": "Carillon and Alumni Plaza",
     "buildingType": "general",
+    "directionsTo": "Not implemented yet.",
     "buildingInfo": {
       "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
       "tags": [ "Alumni", "Bell Tower" ],
