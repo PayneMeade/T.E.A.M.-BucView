@@ -1,4 +1,4 @@
-﻿@using BucView.Models
+@using BucView.Models
 @model BucView.Models.Building
 @{
     ViewData["Title"] = "Directions";
@@ -26,5 +26,6 @@
         <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
     }
 }
+<div id="map"></div>
 
 

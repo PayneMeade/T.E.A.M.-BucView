@@ -99,6 +99,11 @@ body {
     box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
     outline: none;
 }
+
 a {
     text-decoration: none
+}
+
+#map {
+    height: 350px;
 }
