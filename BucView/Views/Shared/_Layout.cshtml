@@ -10,13 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
             <div class="container-fluid">
                 <div>
-                <a asp-controller="Home" asp-action="Index"><img src="images/etsu-shield.jpg" style="height:50px; margin:auto"></a>
+                <a asp-controller="Home" asp-action="Index"><img src="/images/etsu-shield.jpg" style="height:50px; margin:auto"></a>
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BucView</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -45,12 +47,13 @@
 
     <footer class="border-top footer text-muted" style="background-color:white">
         <div class="container">
-            &copy; 2023 - BucView</a>
+            &copy; 2023 - BucView
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true" type="module"></script>
+    <script src="~/js/TourAPI.js" asp-append-version="true" type="module"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
