@@ -1,13 +1,58 @@
-﻿@using BucView.Models
+@using BucView.Models
 @model BucView.Models.Building
 @{
     ViewData["Title"] = "Tour";
     var image = "/Images/" + ViewData["Building"] + ".jpg";
 }
 
-<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:50%;" />
-<p style="text-align:center">
-    @Model.buildingInfo!.bio
-</p>
+<style type="text/css">
+			html, #page { padding:0; margin:0;}
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			h1, h2, h3, h4, h5, h6 {color:darkblue;}
+			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
+			
+			/* Banner */
+			.banner { padding:0;}
+			.banner-inner { margin:auto;padding:10px;width:970px;background:#061670; }
+			.banner-inner h1 {color:#ffdf0d;font-size:32px;}
+			
+			/* Content */
+			#content { color:blue;}
+			#content-inner { margin:0 auto; width:970px; padding:10px;background:#d3d3f9;border-bottom-right-radius:15px;border-bottom-left-radius:15px;}
+			#content .column { margin:0; text-align:justify; float:left;width:450px;padding:0 24px;}
+			
+			/* Clear both sides to assist with div alignment  */
+			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
+</style>
 
-<a class="btn btn-link" style="display:block; text-align:center" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
+<body style="background-image:url('images/etsu.jpg'); background-size:cover">
+<div style="padding-top:80px">
+			<div class="banner">
+				<div class="banner-inner">
+				<h1>Tour Page</h1>
+				</div>
+			</div>
+		
+
+			<div id="content">
+				<div id="content-inner">
+				
+					<div class="column">
+						<h2><span>Building Name</span></h2>
+						<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:50%;" />
+					</div>	
+					<div class="column">
+						<h2><span>Heading</span></h2>
+						<p>
+              @Model.buildingInfo!.bio
+            </p>
+					</div>					
+					<div class="clr"></div>
+					<div  style="text-align:right">
+						<a class="btn btn-link" style="display:block; text-align:center" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+</body>
