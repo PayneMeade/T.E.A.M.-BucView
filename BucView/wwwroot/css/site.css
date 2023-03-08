@@ -100,6 +100,10 @@ body {
     outline: none;
 }
 
+a {
+    text-decoration: none
+}
+
 #map {
     height: 350px;
 }
