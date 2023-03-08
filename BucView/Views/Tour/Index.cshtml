@@ -1,16 +1,13 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using BucView.Models
+@model BucView.Models.Building
 @{
     ViewData["Title"] = "Tour";
+    var image = "/Images/" + ViewData["Building"] + ".jpg";
 }
 
-<h1>This will be the Tour Page</h1>
-
-<img src="" alt="This is where a picture for @ViewData["Building"] will be dynamically loaded"/>
-
-<p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse molestie augue ut neque rhoncus, et accumsan enim eleifend. Duis sagittis elit vitae neque rhoncus, non consequat nisi sollicitudin. Nulla congue sem scelerisque vulputate vulputate. Aenean fermentum ante vel odio imperdiet ullamcorper. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam a quam dolor. Sed vulputate consectetur placerat. Ut pulvinar commodo dolor, nec euismod dolor fringilla et. Nullam ex tortor, euismod id lacinia sit amet, finibus in metus.
+<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:50%;" />
+<p style="text-align:center">
+    @Model.buildingInfo!.bio
 </p>
 
-<a class="btn btn-link" asp-controller="Directions" asp-action="Index">Next</a>
+<a class="btn btn-link" style="display:block; text-align:center" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
