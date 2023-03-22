@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 
 namespace BucView.Controllers
 {
@@ -8,7 +9,10 @@ namespace BucView.Controllers
         {
             if (!HttpContext.Request.Cookies.ContainsKey("page"))
             {
-                HttpContext.Response.Cookies.Append("page", "WebPage");
+                CookieOptions options = new CookieOptions();
+                options.Expires = DateTimeOffset.Now.AddDays(7);
+
+                HttpContext.Response.Cookies.Append("tour", "WebPage");
                 return View();
             }
             else

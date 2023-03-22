@@ -14,6 +14,8 @@ namespace BucView.Controllers
             string toBuilding;
             string fromBuilding;
             var tour1 = new Tour();
+            CookieOptions options = new CookieOptions();
+
             if (id == null) //If start of tour...
             {
                 toBuilding = tour1.getNext("tour1",""); //Find first building in the list
@@ -32,6 +34,14 @@ namespace BucView.Controllers
             buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
             ViewData["ToBuilding"] = toBuilding;
+
+            //Set cookie to expire after one week
+            string url = this.Request.Path;
+            options.Expires = DateTime.Now.AddDays(7);
+            HttpContext.Response.Cookies.Append("page", "Directions", options);
+            HttpContext.Response.Cookies.Append("buildingName", building.buildingName, options);
+            
+
             return View(building);  //Pass model to view
         }
         public string FilePath(string fileName)
