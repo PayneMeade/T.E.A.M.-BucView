@@ -36,11 +36,10 @@ namespace BucView.Controllers
             ViewData["ToBuilding"] = toBuilding;
 
             //Set cookie to expire after one week
-            string url = this.Request.Path;
             options.Expires = DateTime.Now.AddDays(7);
-            HttpContext.Response.Cookies.Append("page", "Directions", options);
-            HttpContext.Response.Cookies.Append("buildingName", building.buildingName, options);
-            
+            string url = Request.Path.ToString();
+            HttpContext.Response.Cookies.Append("page", url, options);
+
 
             return View(building);  //Pass model to view
         }

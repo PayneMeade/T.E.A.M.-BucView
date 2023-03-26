@@ -29,8 +29,8 @@ namespace BucView.Controllers
             }
 
             options.Expires = DateTime.Now.AddDays(7);
-            HttpContext.Response.Cookies.Append("page", "Tour", options);
-            HttpContext.Response.Cookies.Append("buildingName", building.buildingName, options);
+            string url = Request.Path.ToString();
+            HttpContext.Response.Cookies.Append("page", url, options);
 
             return View(building); //Pass building model to the view
         }

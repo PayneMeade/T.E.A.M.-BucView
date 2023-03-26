@@ -17,25 +17,15 @@ namespace BucView.Controllers
 
         public IActionResult Index()
         {
-            Building building = new Building();
-
-            if (HttpContext.Request.Cookies.ContainsKey("page") && HttpContext.Request.Cookies.ContainsKey("buildingName"))
+            if (!HttpContext.Request.Cookies.ContainsKey("page"))
             {
-                var page = HttpContext.Request.Cookies["page"];
-                building.buildingName = HttpContext.Request.Cookies["buildingName"];
-                var buildingsList = new List<Building>();
-                var filepath = FilePath("Building Info");
-                var jsonText = System.IO.File.ReadAllText(filepath);
-                buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText);
-                building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(building.buildingName))!;
-
-                //ViewData["buildingName"] = buildingName;
-                //return View();
-                return View($"/Views/{page}/Index.cshtml", building);
+                return View();
             }
             else
             {
-                return View();
+                var page = HttpContext.Request.Cookies["page"];
+
+                return Redirect(page);
             }
         }
 
