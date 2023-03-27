@@ -27,8 +27,8 @@
             @Model!.directionsTo
         </p>
         <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
-        <input type="hidden" id="lat" value="@Model!.buildingInfo!.Long" />
-        <input type="hidden" id="long" value="@Model!.buildingInfo!.Lat" />
+        <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
+        <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
         <div id="map"></div>
     }
 }
