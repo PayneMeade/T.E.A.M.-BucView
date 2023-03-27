@@ -17,16 +17,23 @@ namespace BucView.Controllers
 
         public IActionResult Index()
         {
-            if (!HttpContext.Request.Cookies.ContainsKey("page"))
+            if (HttpContext.Request.Cookies.ContainsKey("page"))
             {
+                if(HttpContext.Request.Cookies["page"] != "Home")
+                {
+                    var page = HttpContext.Request.Cookies["page"];
+
+                    return Redirect(page);
+                }
                 return View();
             }
-            else
-            {
-                var page = HttpContext.Request.Cookies["page"];
+            return View();
+        }
 
-                return Redirect(page);
-            }
+        public IActionResult ResetCookie()
+        {
+            HttpContext.Response.Cookies.Append("page", "Home");
+            return View("/Views/Home/Index.cshtml");
         }
 
         public IActionResult Privacy()

@@ -35,8 +35,8 @@ namespace BucView.Controllers
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
             ViewData["ToBuilding"] = toBuilding;
 
-            //Set cookie to expire after one week
-            options.Expires = DateTime.Now.AddDays(7);
+            //Set cookie to expire after one day
+            options.Expires = DateTime.Now.AddDays(1);
             string url = Request.Path.ToString();
             HttpContext.Response.Cookies.Append("page", url, options);
 

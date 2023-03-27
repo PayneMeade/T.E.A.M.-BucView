@@ -28,7 +28,8 @@ namespace BucView.Controllers
                 ViewData["Building"] = "Error";
             }
 
-            options.Expires = DateTime.Now.AddDays(7);
+            //Set cookie expiration to one day from today.
+            options.Expires = DateTime.Now.AddDays(1);
             string url = Request.Path.ToString();
             HttpContext.Response.Cookies.Append("page", url, options);
 
