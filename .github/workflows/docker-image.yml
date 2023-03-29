@@ -21,7 +21,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag PayneMeade/T.E.A.M.-BucView:latest
+      run: docker build . --file Dockerfile --tag paynemeade/t.e.a.m.-bucview:latest
       
     - name: Docker Push
       run: docker push ${{secrets.DOCKER_USER}}/buckviewteam/bucview
