@@ -10,7 +10,9 @@ namespace BucView.Controllers
     {
         public IActionResult Index(string id) //Id = Current Building as a string
         {
-            Building building = new Building(); 
+            Building building = new Building();
+            CookieOptions options = new CookieOptions();
+
             if (id != null) //If start of tour...
             {
                 var parsedString = HttpUtility.UrlDecode(id);  //decode the url parameter ( a "/" is represented as "%20" in the url)
@@ -25,6 +27,12 @@ namespace BucView.Controllers
             {
                 ViewData["Building"] = "Error";
             }
+
+            //Set cookie expiration to one day from today.
+            options.Expires = DateTime.Now.AddDays(1);
+            string url = Request.Path.ToString();
+            HttpContext.Response.Cookies.Append("page", url, options);
+
             return View(building); //Pass building model to the view
         }
         /// <summary>

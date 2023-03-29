@@ -11,6 +11,7 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  
 }
 
 body {
@@ -18,26 +19,13 @@ body {
     font-family: 'Noto Serif Khojki', serif;
 }
 
-.info{
-    
+.Info {
     position: absolute;
-    top: 350px;
-    left: 30%;
-    right: 30%;
+    left: 10%;
+    right: 10%;
     color: white;
-    font: 400;
+    font: 24;
 }
-
-.box {
-    position: absolute;
-    background: linear-gradient(to bottom, #444444b9, #00000000);
-    top: 300px;
-    left: 25%;
-    right: 25%;
-    padding: 2% 0% 10% 0%;
-}
-
-
 .navbar-brand {
     margin-left: 8px;
     padding-bottom: 6px;
@@ -56,6 +44,7 @@ body {
 
 .IndexBanner {
     font-size: 50px;
+    font-size: 250%;
     left: 0;
     position: absolute;
     text-align: center;
@@ -64,6 +53,19 @@ body {
     font-weight: 400;
     color: white;
     text-shadow: 1px 1px 2px #00053e;
+}
+
+.Parallax {
+    background-image: url(../images/etsu.jpg);
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    padding-bottom: 45%; /*This sets how far the start of the info bar is. it is set to **% of the screens width.*/
+    max-width: 100%;
+    min-height: 700px;
 }
 
 
@@ -91,7 +93,7 @@ body {
     touch-action: manipulation;
     white-space: nowrap;
     position: absolute;
-    top: 200px;
+    top: 25%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);

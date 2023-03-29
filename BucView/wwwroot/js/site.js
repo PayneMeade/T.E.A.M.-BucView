@@ -2,8 +2,17 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+
+
+let lat = document.getElementById('lat').value;
+let long = document.getElementById('long').value;
+console.log("Lat", lat);
+console.log("Long", long);
+
+
 var map = L.map('map', {
-    center: [36.3024, -82.3699],
+    center: [lat, long],
     zoom: 17,
     maxZoom: 19,
     minZoom: 15,
@@ -15,3 +24,8 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Open Street Maps</a>'
 }).addTo(map);
+
+var marker = L.marker([lat, long]);
+
+// Adding marker to the map
+marker.addTo(map);
