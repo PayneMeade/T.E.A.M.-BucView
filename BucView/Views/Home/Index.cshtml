@@ -3,21 +3,35 @@
 }
 @section LandingPage {
     <div style="position: relative">
-    <img src="/Images/etsu.jpg" style=" width: 100%;"/>
+    <!--<img src="images/etsu.jpg" style=" width: 100%;"/>-->
     <div class="header-content">
         <p class="IndexBanner">Virtual tours of ETSU</p>
 
          <a asp-controller="Directions" asp-action="index" class="button-15">Start</a>
-            <div class="box">
-            </div>
+           
+    </div>
+
+    <div class="Parallax">
 
     </div>
-        
-    <div class="info">
-            
-            BucView is deticated to providing online tours for attending students or prospecting students.
-            
-    </div> 
+        <div style=" height: 160px; background-color: gold;max-height: 210px">
+            <div style="height:150px;position: relative;top: 5px; background-color:darkblue;font-size:100%;max-height: 200px; color:white">
+                <div class="Info">
+
+                        BucView is dedicated to providing online tours for attending students or for prospective students. There is currently one free tour avaliable for general use. This tour takes you around the ETSU campus and highlights buildings that are utilized by all students.
+
+                </div>
+            </div>
+        </div>
+
+           
+        <!--<script>
+            var fileContents = document.getElementById('file-contents');
+            var fileInput = document.getElementById('file-input');
+            var reader = new FileReader();
+
+        </script>-->
+    
     
 </div>
 }
