@@ -56,7 +56,7 @@ body {
 }
 
 .Parallax {
-    background-image: url(../images/etsu.jpg);
+    background-image: url(../Images/etsu.jpg);
     
     background-attachment: fixed;
     background-position: center;
