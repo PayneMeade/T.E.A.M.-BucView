@@ -281,7 +281,7 @@
   {
     "buildingName": "Powell Hall",
     "buildingType": "General",
-    "directionsTo": "Not implemented yet.",
+    "directionsTo": "Facing away from Hutcheson Hall, across from the University Commons is Powell Hall.",
     "buildingInfo": {
       "bio": "Powell Hall is a traditional men's residence hall with double-occupancy rooms and a shared bath on each floor of the three-story building. Residents in Powell Hall are in close proximity to the D.P. Culp Student Center and a number of campus dining options!",
       "tags": [
@@ -679,7 +679,7 @@
   {
     "buildingName": "Carillon and Alumni Plaza",
     "buildingType": "general",
-    "directionsTo": "Not implemented yet.",
+    "directionsTo": "The Carillon is a tall tower towards the left side of campus, and you will be able to hear the bells chime every hour. Follow the pedestrian walkways, and you will come across the Carillon and Alumni Plaza located near the amphitheater.",
     "buildingInfo": {
       "bio": "The tolling bells of the ETSU Foundation Carillon, the centerpiece of the Alumni Plaza that was dedicated in 2005, can be heard throughout the day.",
       "tags": [
