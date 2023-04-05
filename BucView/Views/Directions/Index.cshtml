@@ -3,12 +3,14 @@
 @{
     ViewData["Title"] = "Directions";
 }
+
+    <body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
 @{
     if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
     {
         <h1>This tour begins at the @ViewData["ToBuilding"]</h1>
         <p>
-            <i class="fa-solid fa-route"></i>
+                <i class="fa-solid fa-route fa-xl"></i>
             @Model!.directionsTo
         </p>
 
@@ -25,6 +27,7 @@
     {
         <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
         <p>
+                <i class="fa-solid fa-route fa-xl"></i>
             @Model!.directionsTo
         </p>
 
@@ -32,5 +35,8 @@
         <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
         <div id="map"></div>
     }
-    <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+        <div class="text-center">
+            <a class="btn btn-primary mt-4" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+        </div>
 }
+    </body>
