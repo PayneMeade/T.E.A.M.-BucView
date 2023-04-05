@@ -37,7 +37,8 @@ namespace BucView.Controllers
             var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
             buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
-                                                                                                //getting from building latitude and longitude 
+
+            //if we are not at the start of the tour, we are getting from building latitude and longitude for directions 
             if (id != null && fromBuilding != null)
             {
                 var fromBuildingModel = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(fromBuilding))!;
