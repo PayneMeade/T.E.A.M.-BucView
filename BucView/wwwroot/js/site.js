@@ -5,13 +5,14 @@
 
 
 
-let lat = document.getElementById('lat').value;
-let long = document.getElementById('long').value;
+let lat = document.getElementById('toLat').value;
+let long = document.getElementById('toLong').value;
 console.log("Lat", lat);
 console.log("Long", long);
 
 
 var map = L.map('map', {
+    layers: MQ.mapLayer(),
     center: [lat, long],
     zoom: 17,
     maxZoom: 19,
