@@ -16,8 +16,8 @@
         <input type="hidden" id="toLat" value="@Model!.buildingInfo!.Lat" />
         <input type="hidden" id="toLong" value="@Model!.buildingInfo!.Long" />
         <!--From building Latitude and longitue -->
-        <input type="hidden" id="fromLat" value="@Model!.buildingInfo!.Lat" />
-        <input type="hidden" id="fromLong" value="@Model!.buildingInfo!.Long" />
+        <input type="hidden" id="fromLat" value="@ViewData["fromLat"]" />
+        <input type="hidden" id="fromLong" value="@ViewData["fromLong"]" />
         <div id="map"></div>
     }
     else if(Model == null){
@@ -31,10 +31,12 @@
             @Model!.directionsTo
         </p>
         <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+        <!-- To building latitude and longitude -->
         <input type="hidden" id="toLat" value="@Model!.buildingInfo!.Lat" />
         <input type="hidden" id="toLong" value="@Model!.buildingInfo!.Long" />
-        <input type="hidden" id="toLat" value="@Model!.buildingInfo!.Lat" />
-        <input type="hidden" id="toLong" value="@Model!.buildingInfo!.Long" />
+         <!--From building Latitude and longitue -->
+        <input type="hidden" id="fromLat" value="@ViewData["fromLat"]" />
+        <input type="hidden" id="fromLong" value="@ViewData["fromLong"]" />
         <div id="map"></div>
     }
 }
