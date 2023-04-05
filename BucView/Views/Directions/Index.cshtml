@@ -6,19 +6,20 @@
 @{
     if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
     {
-        <h1>Start of tour</h1>
-        <h1>Directions to @ViewData["ToBuilding"]</h1>
+        <h1>This tour begins at the @ViewData["ToBuilding"]</h1>
         <p>
+            <i class="fa-solid fa-route"></i>
             @Model!.directionsTo
         </p>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+
         <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
         <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
         <div id="map"></div>
     }
-    else if(Model == null){
+    else if (Model == null)
+    {
         <h1 style="text-align: center">End of tour</h1>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Home" asp-action="Index">Home</a>
+        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Home" asp-action="ResetCookie">Home</a>
     }
     else
     {
@@ -26,12 +27,10 @@
         <p>
             @Model!.directionsTo
         </p>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
+
         <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
         <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
         <div id="map"></div>
     }
+    <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
 }
-
-
-
