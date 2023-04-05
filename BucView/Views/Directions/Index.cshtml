@@ -9,8 +9,8 @@
     if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
         {
             <div class="jumbotron" style="text-align: center;  padding-top: 30px; padding-bottom: 10px;">
+                    <i class="fa-solid fa-route fa-2xl mb-4"></i>
                                 <h1>This tour begins at the @ViewData["ToBuilding"]</h1>
-                    <i class="fa-solid fa-route fa-xl"></i>
                                 <p>
                                     
                                     @Model!.directionsTo
@@ -29,8 +29,8 @@
     else
     {
                         <div class="jumbotron" style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
+                    <i class="fa-solid fa-route fa-2xl mb-4"></i>
                         <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
-                    <i class="fa-solid fa-route fa-xl"></i>
                         <p>
                                 
                             @Model!.directionsTo
