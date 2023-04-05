@@ -33,6 +33,13 @@ namespace BucView.Controllers
             var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
             buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
+            //
+            if (!fromBuilding.Equals("N/A") || fromBuilding != null)
+            {
+                var fromBuildingModel = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(fromBuilding))!;
+                ViewData["fromLat"] = fromBuildingModel.buildingInfo.Lat;
+                ViewData["fromLong"] = fromBuildingModel.buildingInfo.Long;
+            }
             ViewData["ToBuilding"] = toBuilding;
 
             //Set cookie to expire after one day
