@@ -13,13 +13,13 @@
 			
 			/* Banner */
 			.banner { padding:0;}
-			.banner-inner { margin:auto;padding:10px;max-width:970px;background:#061670; }
+			.banner-inner { margin:auto;padding:10px;max-width:85%;background:#061670; }
 			.banner-inner h1 {color:#ffdf0d;font-size:32px;}
 			
 			/* Content */
-			#content { color:blue; max-height: 900px;padding-bottom: 75px;}
-			#content-inner { margin:0 auto; max-width:970px; padding:10px;background:#d3d3f9;border-bottom-right-radius:15px;border-bottom-left-radius:15px;}
-			#content .column { margin:0; text-align:left; float:left;width:450px;padding:0 24px;max-width: 150%;}
+			#content { color:blue; max-height: 100%;padding-bottom: 75px;}
+			#content-inner { margin:0 auto; max-width:85%; padding:10px;background:#d3d3f9;border-bottom-right-radius:15px;border-bottom-left-radius:15px;}
+			#content .column { margin:0; text-align:left; float:left;padding:0 24px; width:contain}
 			
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
@@ -32,7 +32,6 @@
 				<h1>Tour Page</h1>
 				</div>
 			</div>
-		
 
 			<div id="content">
 				<div id="content-inner">
@@ -40,11 +39,12 @@
 					<div class="column">
 						<h2 style="text-align:center"><span>@Model.buildingName</span></h2>
 						<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:100%; " />
-					</div>	
-					<div class="column">
+					
 						<p style="font-size: 20px">
-              @Model.buildingInfo!.bio
-            </p>
+			
+							 @Model.buildingInfo!.bio
+
+						</p>
 					</div>					
 					<div class="clr"></div>
 					<div style="text-align:right">
