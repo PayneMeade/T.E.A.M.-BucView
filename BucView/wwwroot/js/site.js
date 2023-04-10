@@ -11,6 +11,19 @@ console.log("Lat", lat);
 console.log("Long", long);
 
 
+
+const positionCallback = (position) => {
+    console.log(position);
+}
+
+const errorCallback = (error) => {
+    console.log(error);
+}
+
+const getLocation = () => {
+    navigator.geolocation.getCurrentPosition(positionCallback, errorCallback);
+}
+
 var map = L.map('map', {
     layers: MQ.mapLayer(),
     center: [lat, long],
@@ -30,3 +43,5 @@ var marker = L.marker([lat, long]);
 
 // Adding marker to the map
 marker.addTo(map);
+
+setInterval(getLocation, 1000);
