@@ -10,8 +10,6 @@ let long = document.getElementById('toLong').value;
 console.log("Lat", lat);
 console.log("Long", long);
 
-
-
 const positionCallback = (position) => {
     console.log(position);
 }
@@ -44,4 +42,4 @@ var marker = L.marker([lat, long]);
 // Adding marker to the map
 marker.addTo(map);
 
-setInterval(getLocation, 1000);
+//setInterval(getLocation, 1000);
