@@ -4,45 +4,50 @@
     ViewData["Title"] = "Directions";
 }
 
-    <body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
-@{
-    if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
+<body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
+    @{
+        if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
         {
-            <div class="jumbotron" style="text-align: center;  padding-top: 30px; padding-bottom: 10px;">
-                    <i class="fa-solid fa-route fa-2xl mb-4"></i>
-                                <h1>This tour begins at the @ViewData["ToBuilding"]</h1>
-                                <p>
-                                    
-                                    @Model!.directionsTo
-                                </p>
-                    </div>
+                        <div class="jumbotron" style="text-align: center;  padding-top: 30px; padding-bottom: 10px;">
+                            <i class="fa-solid fa-route fa-2xl mb-4"></i>
+
+                            <h2 style="font-size: 24px;">This tour begins at the @ViewData["ToBuilding"]</h2>
+                            <hr>
+                            <p style="text-shadow: 1px 3px 3px black;font-size: 17px;padding-top: 20px;padding-bottom: 15px;color: white;">
+
+                                @Model!.directionsTo As shown below, the building on the map is marked with a pin.
+                            </p>
+                        </div>
 
                         <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
                         <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
                         <div id="map"></div>
-    }
-    else if (Model == null)
-    {
+        }
+        else if (Model == null)
+        {
                         <h1 style="text-align: center">End of tour</h1>
-                        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Home" asp-action="ResetCookie">Home</a>
-    }
-    else
-    {
+                        <a class="btn btn-link mb-5" style="display:block; text-align:center" asp-controller="Home" asp-action="ResetCookie">Home</a>
+        }
+        else
+        {
                         <div class="jumbotron" style="text-align: center; padding-top: 30px; padding-bottom: 10px;">
-                    <i class="fa-solid fa-route fa-2xl mb-4"></i>
-                        <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
-                        <p>
-                                
-                            @Model!.directionsTo
-                        </p>
+                            <h1>Next stop - @Model.buildingName</h1>
+
+                            <hr>
+                            <i class="fa-solid fa-route fa-2xl mb-4"></i>
+                            <h2 style="font-size: 24px;">@ViewData["FromBuilding"] <i class="fa-solid fa-right-long"></i> @ViewData["ToBuilding"]</h2>
+                            <p style="text-shadow: 1px 3px 3px black;font-size: 17px;padding-top: 20px;padding-bottom: 15px;color: white;">
+
+                                @Model!.directionsTo As shown below, the building on the map is marked with a pin.
+                            </p>
                         </div>
 
                         <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
                         <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
                         <div id="map"></div>
+        }
+                    <div class="text-center">
+                <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">I'm here!</a>
+                    </div>
     }
-                        <div class="text-center">
-                            <a class="btn btn-primary mt-4" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
-                        </div>
-}
-    </body>
+</body>
