@@ -21,20 +21,25 @@ namespace BucView.Controllers
                 toBuilding = tour1.getNext("tour1",""); //Find first building in the list
                 fromBuilding = "N/A";   
                 ViewData["FromBuilding"] = fromBuilding;
+                ViewData["fromLat"] = " ";
+                ViewData["fromLong"] = " ";
             }
             else
             {
+                
                 fromBuilding = HttpUtility.UrlDecode(id); //Decode url parameter
                 toBuilding = tour1.getNext("tour1", fromBuilding);  //Get the next building as a string
                 ViewData["FromBuilding"] = fromBuilding;
             }
             var buildingsList = new List<Building>();
+            
             var filepath = FilePath("Building Info");
             var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
             buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
-            //
-            if (!fromBuilding.Equals("N/A") || fromBuilding != null)
+
+            //if we are not at the start of the tour, we are getting from building latitude and longitude for directions 
+            if (id != null && fromBuilding != null)
             {
                 var fromBuildingModel = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(fromBuilding))!;
                 ViewData["fromLat"] = fromBuildingModel.buildingInfo.Lat;
