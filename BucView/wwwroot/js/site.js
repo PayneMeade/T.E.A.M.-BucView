@@ -2,13 +2,24 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+if (window.location.toString().indexOf("Tour") != -1) {
+    document.addEventListener('keypress', function (e) {
+        if (e.key == 'Enter') {
+            document.getElementById('nextButton').click();
+        }
+    });
+}
+if (window.location.toString().indexOf("Directions") != -1) {
+    document.addEventListener('keypress', function (e) {
+        if (e.key == 'Enter') {
+            document.getElementById('foundIt').click();
+        }
+    })
+    var lat = document.getElementById('lat').value;
+    var long = document.getElementById('long').value;
+}
 
 
-
-let lat = document.getElementById('lat').value;
-let long = document.getElementById('long').value;
-console.log("Lat", lat);
-console.log("Long", long);
 
 
 var map = L.map('map', {
@@ -29,3 +40,4 @@ var marker = L.marker([lat, long]);
 
 // Adding marker to the map
 marker.addTo(map);
+
