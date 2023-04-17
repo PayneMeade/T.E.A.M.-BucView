@@ -16,6 +16,9 @@
 
                     @Model!.directionsTo As shown below, the building on the map is marked with a pin.
                 </p>
+                <div class="text-center">
+                    <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="speak" asp-controller="Home" asp-action="Speak" asp-route-id="@Model!.directionsTo">Listen</a>
+                </div>
             </div>
 
             <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
@@ -24,6 +27,7 @@
             <div class="text-center">
                 <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">I'm here!</a>
             </div>
+            
         }
         else if (Model == null)
         {
@@ -42,6 +46,9 @@
 
                     @Model!.directionsTo As shown below, the building on the map is marked with a pin.
                 </p>
+                <div class="text-center">
+                    <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="speak" asp-controller="Home" asp-action="Speak" asp-route-id="@Model!.directionsTo">Listen</a>
+                </div>
             </div>
 
             <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
@@ -50,6 +57,7 @@
             <div class="text-center">
                 <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">I'm here!</a>
             </div>
+            
         }
 
     }
