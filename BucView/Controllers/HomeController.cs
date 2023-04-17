@@ -3,6 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Web;
 using System.Text.Json;
+using System.Speech.Synthesis;
+using Google.Cloud.TextToSpeech;
+using Google.Cloud.TextToSpeech.V1;
+using Google.Api.Gax.Grpc.Rest;
 
 namespace BucView.Controllers
 {
@@ -34,6 +38,21 @@ namespace BucView.Controllers
         {
             HttpContext.Response.Cookies.Append("page", "Home");
             return View("/Views/Home/Index.cshtml");
+        }
+
+        public IActionResult Speak(string id)
+        {
+            var speak = new SpeechSynthesizer();
+            speak.SetOutputToDefaultAudioDevice();
+
+            if (id != null)
+                speak.Speak(id);
+            else
+                speak.Speak("Error");
+            
+
+            return Redirect(HttpContext.Request.Cookies["page"]);
+
         }
 
         public IActionResult Privacy()

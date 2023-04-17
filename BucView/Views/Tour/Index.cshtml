@@ -41,15 +41,21 @@
 						<h2 style="text-align:center"><span>@Model.buildingName</span></h2>
 						<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:100%; " />
 					</div>	
+
 					<div class="column">
 						<p style="font-size: 20px">
               <br> @Model.buildingInfo!.bio
             </p>
+
+						<div class="text-center">
+							<a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="speak" asp-controller="Home" asp-action="Speak" asp-route-id="@Model.buildingInfo!.bio">Listen</a>
+						</div>
 					</div>					
 					<div class="clr"></div>
-					<div style="text-align:right">
-						<a class="btn btn-link" style="display:block; text-align:center" id="nextButton" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
+					<div class="text-center" style="text-align:right">
+						<a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="nextButton" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
 					</div>
+					
 				</div>
 			</div>
 		</div>
