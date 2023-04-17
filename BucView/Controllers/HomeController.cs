@@ -4,9 +4,6 @@ using System.Diagnostics;
 using System.Web;
 using System.Text.Json;
 using System.Speech.Synthesis;
-using Google.Cloud.TextToSpeech;
-using Google.Cloud.TextToSpeech.V1;
-using Google.Api.Gax.Grpc.Rest;
 
 namespace BucView.Controllers
 {
@@ -42,17 +39,24 @@ namespace BucView.Controllers
 
         public IActionResult Speak(string id)
         {
-            var speak = new SpeechSynthesizer();
-            speak.SetOutputToDefaultAudioDevice();
+            //Gets the Device information.
+            string userAgent = Request.Headers["User-Agent"].ToString().ToLower();
 
-            if (id != null)
-                speak.Speak(id);
-            else
-                speak.Speak("Error");
-            
+            //Text to Speech only works on Windows.
+            if (userAgent.Contains("windows"))
+            {
+                var speak = new SpeechSynthesizer();
+                speak.SetOutputToDefaultAudioDevice();
 
+                if (id != null)
+                    //Id should be the directions for the Directions page or building description for the Tour page.
+                    speak.SpeakAsync(id);
+                else
+                    speak.SpeakAsync("Error");
+            }
+ 
+            //Redirects back to previous page
             return Redirect(HttpContext.Request.Cookies["page"]);
-
         }
 
         public IActionResult Privacy()
@@ -68,7 +72,7 @@ namespace BucView.Controllers
 
         public string FilePath(string fileName)
         {
-            string rootDirectory = System.IO.Directory.GetCurrentDirectory();           //Finds the path of the current working directory of the project
+            string rootDirectory = System.IO.Directory.GetCurrentDirectory();                                                    //Finds the path of the current working directory of the project
             return rootDirectory + $"{Path.DirectorySeparatorChar}JSON files{Path.DirectorySeparatorChar}{fileName}.json";       //Using our root directory from the RootPath() method find the file named 'rootFile1.txt.'      
         }
     }
