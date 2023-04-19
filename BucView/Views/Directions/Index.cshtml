@@ -42,6 +42,13 @@
     }
 }
 
+<body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
+    @{
+        if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null)
+        {
+            <div class="jumbotron" style="text-align: center;  padding-top: 30px; padding-bottom: 10px;">
+                <i class="fa-solid fa-route fa-2xl mb-4"></i>
+
                 <h2 style="font-size: 24px;">This tour begins at the @ViewData["ToBuilding"]</h2>
                 <hr>
                 <p style="text-shadow: 1px 3px 3px black;font-size: 17px;padding-top: 20px;padding-bottom: 15px;color: white;">
