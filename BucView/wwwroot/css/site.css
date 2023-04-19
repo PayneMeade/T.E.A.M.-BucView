@@ -129,3 +129,16 @@ a {
 #map {
     height: 350px;
 }
+
+#foundIt {
+    border-radius: 7px;
+    background-color: #FFC72C;
+    color: #00053E;
+    border: none;
+}
+
+    #foundIt:hover {
+        transform: scale(1.1,1.1);
+        -webkit-transform: scale(1.1,1.1);
+        -moz-transform: scale(1.1,1.1);
+    }
