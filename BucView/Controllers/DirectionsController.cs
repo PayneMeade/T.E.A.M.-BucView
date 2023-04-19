@@ -21,18 +21,30 @@ namespace BucView.Controllers
                 toBuilding = tour1.getNext("tour1",""); //Find first building in the list
                 fromBuilding = "N/A";   
                 ViewData["FromBuilding"] = fromBuilding;
+                ViewData["fromLat"] = " ";
+                ViewData["fromLong"] = " ";
             }
             else
             {
+                
                 fromBuilding = HttpUtility.UrlDecode(id); //Decode url parameter
                 toBuilding = tour1.getNext("tour1", fromBuilding);  //Get the next building as a string
                 ViewData["FromBuilding"] = fromBuilding;
             }
             var buildingsList = new List<Building>();
+            
             var filepath = FilePath("Building Info");
             var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
             buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
+
+            //if we are not at the start of the tour, we are getting from building latitude and longitude for directions 
+            if (id != null && fromBuilding != null)
+            {
+                var fromBuildingModel = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(fromBuilding))!;
+                ViewData["fromLat"] = fromBuildingModel.buildingInfo.Lat;
+                ViewData["fromLong"] = fromBuildingModel.buildingInfo.Long;
+            }
             ViewData["ToBuilding"] = toBuilding;
 
             //Set cookie to expire after one day
@@ -46,7 +58,7 @@ namespace BucView.Controllers
         public string FilePath(string fileName)
         {
             string rootDirectory = System.IO.Directory.GetCurrentDirectory();           //Finds the path of the current working directory of the project
-            return rootDirectory + $"{Path.DirectorySeparatorChar}JSON files{Path.DirectorySeparatorChar}{fileName}.json";       //Using our root directory from the RootPath() method find the file named 'rootFile1.txt.'      
+            return rootDirectory + $"{Path.DirectorySeparatorChar}wwwroot{Path.DirectorySeparatorChar}JSON files{Path.DirectorySeparatorChar}{fileName}.json";       //Using our root directory from the RootPath() method find the file named 'rootFile1.txt.'      
         }
     }
 }
