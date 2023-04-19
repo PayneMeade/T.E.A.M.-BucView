@@ -56,6 +56,10 @@ const distanceToBuilding = (userLat, userLong, buildingLat, buildingLong) => {
 const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
+
+    //var user = L.user([userLat, userLong]);
+    //user.addTo(map);
+
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
         window.location.href = encodeURI(`../../Tour/Index/${toBuilding}`);
 }
@@ -88,4 +92,4 @@ var marker = L.marker([lat, long]);
 // Adding marker to the map
 marker.addTo(map);
 
-getLocation();
+setInterval(getLocation, 1000);
