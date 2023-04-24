@@ -59,7 +59,7 @@ const positionCallback = (position) => {
     let userLong = position.coords.longitude;
 
 
-    var userMarker = L.userMarker([userLat, userLong]);
+    var userMarker = L.marker([userLat, userLong]);
     userMarker.addTo(map);
 
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
