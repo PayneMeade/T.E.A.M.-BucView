@@ -4,7 +4,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
        builder =>
        {
-           builder.WithOrigins("https://151.141.90.176:7203/")
+           builder.WithOrigins("http://127.0.0.1:7203/")
                 .AllowAnyHeader()
                 .AllowAnyMethod();
        });

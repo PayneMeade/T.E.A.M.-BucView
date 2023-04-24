@@ -59,7 +59,7 @@ namespace BucView_BuildingInfo.Controllers
         public string FilePath(string fileName)
         {
             string rootDirectory = System.IO.Directory.GetCurrentDirectory();           //Finds the path of the current working directory of the project
-            return rootDirectory + $"{Path.DirectorySeparatorChar}JSON files{Path.DirectorySeparatorChar}{fileName}.json";       //Using our root directory from the RootPath() method find the file named 'rootFile1.txt.'      
+            return rootDirectory + $"{Path.DirectorySeparatorChar}JSON Files{Path.DirectorySeparatorChar}{fileName}.json";       //Using our root directory from the RootPath() method find the file named 'rootFile1.txt.'      
         }
     }
 }

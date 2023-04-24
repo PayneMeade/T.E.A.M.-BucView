@@ -8,7 +8,7 @@ namespace BucView.Controllers
 {
     public class TourController : Controller
     {
-        public IActionResult Index(string id) //Id = Current Building as a string
+        public async Task<IActionResult> Index(string id) //Id = Current Building as a string
         {
             Building building = new Building();
             CookieOptions options = new CookieOptions();
@@ -18,9 +18,22 @@ namespace BucView.Controllers
                 var parsedString = HttpUtility.UrlDecode(id);  //decode the url parameter ( a "/" is represented as "%20" in the url)
                 ViewData["Building"] = parsedString;
                 var buildingsList = new List<Building>();
-                var filepath = FilePath("Building Info");     
-                var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
-                buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building objects
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri("http://151.141.90.201:7277/api/");
+                string jsonString;
+                try
+                {
+                    var response = await client.GetAsync("Building/all");
+                    Console.WriteLine(response);
+                    jsonString = await response.Content.ReadAsStringAsync();
+                }
+                catch (Exception e)
+                {
+                    jsonString = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
+                }
+                
+                buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonString); //Deserialize json text into a list of building objects
                 building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(parsedString))!;   //Find the building that equals parsedString
             }
             else
