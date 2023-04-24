@@ -3,6 +3,8 @@
 
 // Write your JavaScript code.
 
+//api key: 
+
 let lat = parseFloat(document.getElementById('toLat').value);
 let long = parseFloat(document.getElementById('toLong').value);
 let toBuilding = document.getElementById('toBuilding').value;
@@ -51,25 +53,5 @@ const errorCallback = (error) => {
 const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
-
-var map = L.map('map', {
-    layers: MQ.mapLayer(),
-    center: [lat, long],
-    zoom: 17,
-    maxZoom: 19,
-    minZoom: 15,
-    maxBoundsViscosity: 0.5,
-    maxBounds: L.latLngBounds([36.309700, -82.362047], [36.296604, -82.376253])
-});
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Open Street Maps</a>'
-}).addTo(map);
-
-var marker = L.marker([lat, long]);
-
-// Adding marker to the map
-marker.addTo(map);
 
 getLocation();
