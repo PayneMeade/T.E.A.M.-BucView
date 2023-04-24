@@ -9,6 +9,7 @@ if (window.location.toString().indexOf("Tour") != -1) {
         }
     });
 }
+
 if (window.location.toString().indexOf("Directions") != -1) {
     document.addEventListener('keypress', function (e) {
         if (e.key == 'Enter') {
@@ -18,7 +19,7 @@ if (window.location.toString().indexOf("Directions") != -1) {
     var lat = document.getElementById('lat').value;
     var long = document.getElementById('long').value;
 }
-
+/*
 let lat = parseFloat(document.getElementById('toLat').value);
 let long = parseFloat(document.getElementById('toLong').value);
 let toBuilding = document.getElementById('toBuilding').value;
@@ -57,8 +58,8 @@ const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
 
-    //var user = L.user([userLat, userLong]);
-    //user.addTo(map);
+    //var userMarker = L.marker([userLat, userLong]);
+    //userMarker.addTo(map);
 
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
         window.location.href = encodeURI(`../../Tour/Index/${toBuilding}`);
@@ -71,7 +72,7 @@ const errorCallback = (error) => {
 const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
-
+*/
 var map = L.map('map', {
     layers: MQ.mapLayer(),
     center: [lat, long],
@@ -92,4 +93,4 @@ var marker = L.marker([lat, long]);
 // Adding marker to the map
 marker.addTo(map);
 
-setInterval(getLocation, 1000);
+// setInterval(getLocation, 1000);
