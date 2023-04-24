@@ -34,11 +34,12 @@ namespace BucView.Controllers
             var buildingsList = new List<Building>();
             
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("https://151.141.90.176:7277/api/");
+            client.BaseAddress = new Uri("http://151.141.90.201:7277/api/");
             string jsonString;
             try
             {
                 var response = await client.GetAsync("Building/all");
+                Console.WriteLine(response);
                 jsonString = await response.Content.ReadAsStringAsync();
             }
             catch (Exception e)
