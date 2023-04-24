@@ -19,10 +19,10 @@ if (window.location.toString().indexOf("Directions") != -1) {
     var lat = document.getElementById('lat').value;
     var long = document.getElementById('long').value;
 }
-/*
-let lat = parseFloat(document.getElementById('toLat').value);
-let long = parseFloat(document.getElementById('toLong').value);
-let toBuilding = document.getElementById('toBuilding').value;
+
+var lat = parseFloat(document.getElementById('lat').value);
+var long = parseFloat(document.getElementById('long').value);
+let toBuilding = document.getElementById('toBuilding');
 console.log("Lat", lat);
 console.log("Long", long);
 
@@ -58,8 +58,9 @@ const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
 
-    //var userMarker = L.marker([userLat, userLong]);
-    //userMarker.addTo(map);
+
+    var userMarker = L.userMarker([userLat, userLong]);
+    userMarker.addTo(map);
 
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
         window.location.href = encodeURI(`../../Tour/Index/${toBuilding}`);
@@ -72,7 +73,7 @@ const errorCallback = (error) => {
 const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
-*/
+
 var map = L.map('map', {
     layers: MQ.mapLayer(),
     center: [lat, long],
@@ -80,7 +81,7 @@ var map = L.map('map', {
     maxZoom: 19,
     minZoom: 15,
     maxBoundsViscosity: 0.5,
-    maxBounds: L.latLngBounds([36.309700, -82.362047], [36.296604, -82.376253])
+    maxBounds: L.latLngBounds([36.309700, -82.362047], [36.276604, -82.396253])
 });
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -93,4 +94,4 @@ var marker = L.marker([lat, long]);
 // Adding marker to the map
 marker.addTo(map);
 
-// setInterval(getLocation, 1000);
+setInterval(getLocation, 1000);
