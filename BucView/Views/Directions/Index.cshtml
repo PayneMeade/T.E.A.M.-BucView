@@ -3,44 +3,6 @@
 @{
     ViewData["Title"] = "Directions";
 }
-@{
-    if (ViewData["FromBuilding"]!.Equals("N/A") && Model != null) 
-    {
-        <h1>Start of tour</h1>
-        <h1>Directions to @ViewData["ToBuilding"]</h1>
-        <p>
-            @Model!.directionsTo
-        </p>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
-        <!-- To building latitude and longitude -->
-        <input type="hidden" id="toLat" value="@Model!.buildingInfo!.Lat" />
-        <input type="hidden" id="toLong" value="@Model!.buildingInfo!.Long" />
-        <!--From building Latitude and longitue -->
-        <input type="hidden" id="fromLat" value="@ViewData["fromLat"]" />
-        <input type="hidden" id="fromLong" value="@ViewData["fromLong"]" />
-        <div id="map"></div>
-    }
-    else if(Model == null){
-        <h1 style="text-align: center">End of tour</h1>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Home" asp-action="Index">Home</a>
-    }
-    else
-    {
-        <h1>Directions from @ViewData["FromBuilding"] to @ViewData["ToBuilding"]</h1>
-        <p>
-            @Model!.directionsTo
-        </p>
-        <a class="btn btn-link" style="display:block; text-align:center" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">Found It!</a>
-        <!-- To building latitude and longitude -->
-        <input type="hidden" id="toLat" value="@Model!.buildingInfo!.Lat" />
-        <input type="hidden" id="toLong" value="@Model!.buildingInfo!.Long" />
-         <!--From building Latitude and longitue -->
-        <input type="hidden" id="fromLat" value="@ViewData["fromLat"]" />
-        <input type="hidden" id="fromLong" value="@ViewData["fromLong"]" />
-        <input type="hidden" id="toBuilding" value="@ViewData["toBuilding"]" />
-        <div id="map"></div>
-    }
-}
 
 <body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
     @{
