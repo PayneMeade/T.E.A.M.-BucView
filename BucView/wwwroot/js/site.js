@@ -2,6 +2,22 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+if (window.location.toString().indexOf("Tour") != -1) {
+    document.addEventListener('keypress', function (e) {
+        if (e.key == 'Enter') {
+            document.getElementById('nextButton').click();
+        }
+    });
+}
+if (window.location.toString().indexOf("Directions") != -1) {
+    document.addEventListener('keypress', function (e) {
+        if (e.key == 'Enter') {
+            document.getElementById('foundIt').click();
+        }
+    })
+    var lat = document.getElementById('lat').value;
+    var long = document.getElementById('long').value;
+}
 
 //api key: 
 

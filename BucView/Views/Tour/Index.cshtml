@@ -7,25 +7,25 @@
 
 <style type="text/css">
 			html, #page { padding:0; margin:0;}
-			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em Sans-Serif;} 
+			body { margin:0; padding:0; width:100%; color:#959595; font:normal 12px/2.0em; } 
 			h1, h2, h3, h4, h5, h6 {color:darkblue;}
 			#header, #footer, #top-nav, #content, #content #contentbar, #content #sidebar { margin:0; padding:0;}
 			
 			/* Banner */
 			.banner { padding:0;}
-			.banner-inner { margin:auto;padding:10px;max-width:970px;background:#061670; }
+			.banner-inner { margin:auto;padding:10px;max-width:970px;background:#061670; border-top-left-radius:15px; border-top-right-radius:15px; }
 			.banner-inner h1 {color:#ffdf0d;font-size:32px;}
 			
 			/* Content */
-			#content { color:blue; max-height: 700px;padding-bottom: 75px;}
+			#content { color:blue; padding-bottom: 125px;}
 			#content-inner { margin:0 auto; max-width:970px; padding:10px;background:#d3d3f9;border-bottom-right-radius:15px;border-bottom-left-radius:15px;}
-			#content .column { margin:0; text-align:justify; float:left;width:450px;padding:0 24px;max-width: 95%;}
+			#content .column { margin:0; text-align:left; float:left;width:450px;padding:0 24px;max-width: 100%;}
 			
 			/* Clear both sides to assist with div alignment  */
 			.clr { clear:both; padding:0; margin:0; width:100%; font-size:0px; line-height:0px;}
 </style>
 
-<body style="background-image:url('Images/etsu.jpg'); background-size:cover">
+<body style="background-image:url('/Images/etsu.jpg'); background-size:cover">
 <div style="padding-top:80px">
 			<div class="banner">
 				<div class="banner-inner">
@@ -38,19 +38,24 @@
 				<div id="content-inner">
 				
 					<div class="column">
-						<h2><span>@Model.buildingName</span></h2>
-						<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:50%" />
+						<h2 style="text-align:center"><span>@Model.buildingName</span></h2>
+						<img src="@image" style="display:block; margin-left:auto; margin-right:auto; width:100%; " />
 					</div>	
+
 					<div class="column">
-						<h2><span>Heading</span></h2>
-						<p>
-              @Model.buildingInfo!.bio
+						<p style="font-size: 20px">
+              <br> @Model.buildingInfo!.bio
             </p>
+
+						<div class="text-center">
+							<a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="speak" asp-controller="Home" asp-action="Speak" asp-route-id="@Model.buildingInfo!.bio">Listen</a>
+						</div>
 					</div>					
 					<div class="clr"></div>
-					<div style="text-align:right">
-						<a class="btn btn-link" style="display:block; text-align:center" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
+					<div class="text-center" style="text-align:right">
+						<a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="nextButton" asp-controller="Directions" asp-action="Index" asp-route-id="@ViewData["Building"]">Next</a>
 					</div>
+					
 				</div>
 			</div>
 		</div>
