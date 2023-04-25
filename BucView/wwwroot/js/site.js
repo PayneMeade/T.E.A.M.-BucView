@@ -20,11 +20,13 @@ if (window.location.toString().indexOf("Directions") != -1) {
     var long = document.getElementById('long').value;
 }
 
+
 var lat = parseFloat(document.getElementById('lat').value);
 var long = parseFloat(document.getElementById('long').value);
 let toBuilding = document.getElementById('toBuilding');
 console.log("Lat", lat);
 console.log("Long", long);
+
 
 //this function uses the Haversine formula
 //this formula calculates the shortest distance between two points on the Earth
@@ -74,24 +76,7 @@ const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
 
-var map = L.map('map', {
-    layers: MQ.mapLayer(),
-    center: [lat, long],
-    zoom: 17,
-    maxZoom: 19,
-    minZoom: 15,
-    maxBoundsViscosity: 0.5,
-    maxBounds: L.latLngBounds([36.309700, -82.362047], [36.276604, -82.396253])
-});
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">Open Street Maps</a>'
-}).addTo(map);
-
-var marker = L.marker([lat, long]);
-
-// Adding marker to the map
-marker.addTo(map);
+getLocation();
 
 setInterval(getLocation, 1000);
