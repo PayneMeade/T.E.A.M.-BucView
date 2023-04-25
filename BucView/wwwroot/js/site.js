@@ -9,6 +9,7 @@ if (window.location.toString().indexOf("Tour") != -1) {
         }
     });
 }
+
 if (window.location.toString().indexOf("Directions") != -1) {
     document.addEventListener('keypress', function (e) {
         if (e.key == 'Enter') {
@@ -19,13 +20,13 @@ if (window.location.toString().indexOf("Directions") != -1) {
     var long = document.getElementById('long').value;
 }
 
-//api key: 
 
-let lat = parseFloat(document.getElementById('toLat').value);
-let long = parseFloat(document.getElementById('toLong').value);
-let toBuilding = document.getElementById('toBuilding').value;
-//console.log("Lat", lat);
-//console.log("Long", long);
+var lat = parseFloat(document.getElementById('lat').value);
+var long = parseFloat(document.getElementById('long').value);
+let toBuilding = document.getElementById('toBuilding');
+console.log("Lat", lat);
+console.log("Long", long);
+
 
 //this function uses the Haversine formula
 //this formula calculates the shortest distance between two points on the Earth
@@ -58,6 +59,11 @@ const distanceToBuilding = (userLat, userLong, buildingLat, buildingLong) => {
 const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
+
+
+    var userMarker = L.marker([userLat, userLong]);
+    userMarker.addTo(map);
+
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
         window.location.href = encodeURI(`../../Tour/Index/${toBuilding}`);
 }
@@ -70,4 +76,7 @@ const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
 
+
 getLocation();
+
+setInterval(getLocation, 1000);
