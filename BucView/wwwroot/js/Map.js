@@ -6,8 +6,6 @@ let toLong = parseFloat(document.getElementById('toLong').value);
 let fromLat = parseFloat(document.getElementById('fromLat').value);
 let fromLong = parseFloat(document.getElementById('fromLong').value);
 
-console.log(toLat);
-console.log(fromLat);
 
 let map;
 
