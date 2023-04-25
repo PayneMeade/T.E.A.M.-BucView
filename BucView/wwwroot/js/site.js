@@ -23,6 +23,7 @@ if (window.location.toString().indexOf("Directions") != -1) {
 var lat = parseFloat(document.getElementById('lat').value);
 var long = parseFloat(document.getElementById('long').value);
 let toBuilding = document.getElementById('toBuilding');
+var userMarker = L.marker(0, 0);
 console.log("Lat", lat);
 console.log("Long", long);
 
@@ -58,8 +59,10 @@ const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
 
-
-    var userMarker = L.marker([userLat, userLong]);
+    //userMarker.clear(map);
+    //map.clear();
+    //map.getLayers().removeAll();
+    userMarker = L.marker([userLat, userLong]);
     userMarker.addTo(map);
 
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
@@ -73,6 +76,8 @@ const errorCallback = (error) => {
 const getLocation = () => {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback, { enableHighAccuracy: true });
 }
+
+
 
 var map = L.map('map', {
     layers: MQ.mapLayer(),
