@@ -1,9 +1,13 @@
 ﻿//file for displaying map and directions using the google maps and directions API
 
+
 let toLat = parseFloat(document.getElementById('toLat').value);
 let toLong = parseFloat(document.getElementById('toLong').value);
 let fromLat = parseFloat(document.getElementById('fromLat').value);
 let fromLong = parseFloat(document.getElementById('fromLong').value);
+
+console.log(toLat);
+console.log(fromLat);
 
 let map;
 
@@ -34,7 +38,21 @@ async function initMap() {
         lng: toLong
     }
 
-    displayRoute(originPoint, destPoint, directionsService, directionsRenderer);
+    if (fromLat == NaN) {
+        console.log('it worked');
+        var marker = new google.maps.Marker({
+            position: destPoint,
+            map,
+            title: "Start Here",
+        });
+
+        marker.setMap(map);
+    }
+    else {
+        displayRoute(originPoint, destPoint, directionsService, directionsRenderer);
+        console.log('else statement');
+    }
+    
     
 }
 
@@ -54,6 +72,5 @@ function displayRoute(origin, destination, service, display) {
         }
     );
 }
-
 
 initMap();

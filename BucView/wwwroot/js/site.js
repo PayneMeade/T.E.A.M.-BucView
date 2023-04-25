@@ -24,8 +24,8 @@ if (window.location.toString().indexOf("Directions") != -1) {
 let lat = parseFloat(document.getElementById('toLat').value);
 let long = parseFloat(document.getElementById('toLong').value);
 let toBuilding = document.getElementById('toBuilding').value;
-console.log("Lat", lat);
-console.log("Long", long);
+//console.log("Lat", lat);
+//console.log("Long", long);
 
 //this function uses the Haversine formula
 //this formula calculates the shortest distance between two points on the Earth
