@@ -1,4 +1,4 @@
-namespace BucView_BuildingInfo
+namespace BucView_BuildingInfo.Models
 {
     public class Building
     {

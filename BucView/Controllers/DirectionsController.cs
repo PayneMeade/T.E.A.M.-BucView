@@ -8,7 +8,7 @@ namespace BucView.Controllers
 {
     public class DirectionsController : Controller
     {
-        public IActionResult Index(string id)   //Id = Current Building as a string
+        public async Task<IActionResult> Index(string id)   //Id = Current Building as a string
         {
             Building building = new Building();
             string toBuilding;
@@ -33,9 +33,21 @@ namespace BucView.Controllers
             }
             var buildingsList = new List<Building>();
             
-            var filepath = FilePath("Building Info");
-            var jsonText = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
-            buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonText); //Deserialize json text into a list of building
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://151.141.90.201:7277/api/");
+            string jsonString;
+            try
+            {
+                var response = await client.GetAsync("Building/all");
+                Console.WriteLine(response);
+                jsonString = await response.Content.ReadAsStringAsync();
+            }
+            catch (Exception e)
+            {
+                jsonString = System.IO.File.ReadAllText(FilePath("Building Info")); //Read json file
+            }
+
+            buildingsList = JsonSerializer.Deserialize<List<Building>>(jsonString); //Deserialize json text into a list of building
             building = buildingsList!.FirstOrDefault(a => a.buildingName!.Equals(toBuilding))!; //Find the building where buildingName = toBuilding
 
             //if we are not at the start of the tour, we are getting from building latitude and longitude for directions 

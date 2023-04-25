@@ -13,12 +13,22 @@
     <div class="Parallax">
 
     </div>
-        <div style=" height: 160px; background-color: gold;max-height: 210px">
-            <div style="height:150px;position: relative;top: 5px; background-color:darkblue;font-size:100%;max-height: 200px; color:white">
+        <div style=" min-height: 170px; background-color:gold;">   <!--Creating the ETSU style banner at the bottom of the page to hold the Home info-->
+            <div style="min-height:160px; position: relative ;top: 5px; background-color:darkblue; ">
                 <div class="Info">
+                
+                    <iframe title="homeInfo" id="Home" src="/Home Files/HomeText.html" width="100%" height="100%"  ></iframe> <!--Importing HTML file to display Home info-->
 
-                        BucView is dedicated to providing online tours for attending students or for prospective students. There is currently one free tour avaliable for general use. This tour takes you around the ETSU campus and highlights buildings that are utilized by all students.
-
+                        <script>
+                        var frame = document.getElementById('Home');
+                            frame.onload = function(){
+                                var body = frame.contentWindow.document.querySelector('body');
+                                body.style.color = 'white';                 //This code is styling the imported HTML file.
+                                body.style.fontSize = '110%';
+                                body.style.font= 'Arial';
+                            };
+                        </script>
+                
                 </div>
             </div>
         </div>
