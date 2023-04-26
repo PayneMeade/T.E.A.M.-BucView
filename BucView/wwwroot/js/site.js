@@ -2,23 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-if (window.location.toString().indexOf("Tour") != -1) {
-    document.addEventListener('keypress', function (e) {
-        if (e.key == 'Enter') {
-            document.getElementById('nextButton').click();
-        }
-    });
-}
 
-if (window.location.toString().indexOf("Directions") != -1) {
-    document.addEventListener('keypress', function (e) {
-        if (e.key == 'Enter') {
-            document.getElementById('foundIt').click();
-        }
-    })
-    var lat = document.getElementById('lat').value;
-    var long = document.getElementById('long').value;
-}
 
 
 var lat = parseFloat(document.getElementById('lat').value);
@@ -60,9 +44,6 @@ const positionCallback = (position) => {
     let userLat = position.coords.latitude;
     let userLong = position.coords.longitude;
 
-
-    var userMarker = L.marker([userLat, userLong]);
-    userMarker.addTo(map);
 
     if (distanceToBuilding(userLat, userLong, lat, long) <= 15)
         window.location.href = encodeURI(`../../Tour/Index/${toBuilding}`);
