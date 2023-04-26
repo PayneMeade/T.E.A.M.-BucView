@@ -38,8 +38,8 @@ namespace BucView.Controllers
             string jsonString;
             try
             {
-                var response = await client.GetAsync("Building/all");
-                Console.WriteLine(response);
+                var cts = new CancellationTokenSource(TimeSpan.FromSeconds(4)); // Timeout after 4 seconds
+                var response = await client.GetAsync("Building/all", cts.Token);
                 jsonString = await response.Content.ReadAsStringAsync();
             }
             catch (Exception e)
