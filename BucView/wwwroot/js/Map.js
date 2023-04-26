@@ -1,10 +1,13 @@
 ﻿//file for displaying map and directions using the google maps and directions API
 
 
-let toLat = parseFloat(document.getElementById('toLat').value);
-let toLong = parseFloat(document.getElementById('toLong').value);
-let fromLat = parseFloat(document.getElementById('fromLat').value);
-let fromLong = parseFloat(document.getElementById('fromLong').value);
+let toLat = parseFloat(document.getElementById('lat').value);
+let toLong = parseFloat(document.getElementById('long').value);
+let fromLat = parseFloat(document.getElementById('FromLat').value);
+let fromLong = parseFloat(document.getElementById('FromLong').value);
+
+console.log("fromlat ", fromLat);
+console.log("fromLong", fromLong);
 
 
 let map;
