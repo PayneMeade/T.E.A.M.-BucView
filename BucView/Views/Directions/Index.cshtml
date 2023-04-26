@@ -22,8 +22,12 @@
                 </div>
             </div>
 
-            <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
-            <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
+            <input type="hidden" id="tolat" value="@Model!.buildingInfo!.Lat" />
+            <input type="hidden" id="tolong" value="@Model!.buildingInfo!.Long" />
+
+            <input type="hidden" id="fromLat" value="@ViewData["fromLat"]" />
+            <input type="hidden" id="fromLong" value="@ViewData["fromLong"]" />
+
             <div id="map"></div>
             <div class="text-center">
                 <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">I'm here!</a>
@@ -54,6 +58,9 @@
 
             <input type="hidden" id="lat" value="@Model!.buildingInfo!.Lat" />
             <input type="hidden" id="long" value="@Model!.buildingInfo!.Long" />
+
+            <input type="hidden" id="FromLat" value="@ViewData["fromLat"]" />
+            <input type="hidden" id="FromLong" value="@ViewData["fromLong"]" />
             <div id="map"></div>
             <div class="text-center">
                 <a class="btn btn-primary mt-4 mb-5 directionButton" style="border-radius: 7px; background-color:#FFC72C; color:#00053E; border:none" id="foundIt" asp-controller="Tour" asp-action="Index" asp-route-id="@ViewData["ToBuilding"]">I'm here!</a>
